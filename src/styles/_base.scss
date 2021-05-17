@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: linear-gradient(
+		to right,
+		hsl(285.09, 80.9%, 39.02%) 0%,
+		hsl(284.66, 81.05%, 38.14%) 7.5%,
+		hsl(284.22, 81.2%, 37.32%) 14.3%,
+		hsl(283.79, 81.35%, 36.54%) 20.7%,
+		hsl(283.34, 81.5%, 35.8%) 26.7%,
+		hsl(282.87, 81.66%, 35.08%) 32.4%,
+		hsl(282.39, 81.83%, 34.37%) 37.9%,
+		hsl(281.86, 82.02%, 33.65%) 43.5%,
+		hsl(281.27, 82.22%, 32.91%) 49.1%,
+		hsl(280.6, 82.46%, 32.13%) 54.9%,
+		hsl(279.82, 82.73%, 31.28%) 61%,
+		hsl(278.87, 83.07%, 30.34%) 67.5%,
+		hsl(277.69, 83.49%, 29.3%) 74.5%,
+		hsl(276.16, 84.05%, 28.1%) 82.2%,
+		hsl(274.08, 84.81%, 26.72%) 90.7%,
+		hsl(271.09, 85.94%, 25.1%) 100%
+	);
+
+	color: white;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 1.3rem;
+}
+h1,
+h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	@include bp-med {
+		font-size: 3rem;
+	}
+}
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	@include bp-med {
+		font-size: 1.1rem;
+	}
+}
+button {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	color: white;
+	background-color: #71d9f4;
+	border: none;
+	width: 166px;
+	height: 55px;
+}
