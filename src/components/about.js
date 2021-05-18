@@ -1,10 +1,10 @@
 const About = () => {
 	return (
-		<div className="about">
+		<div className="about" id="about">
 			<div className="about__pic">
 				<img src="" alt="me" className="me" />
 			</div>
-			<div className="head__info">
+			<div className="about__info">
 				<h2>ABOUT ME</h2>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.

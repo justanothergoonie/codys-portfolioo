@@ -7,34 +7,41 @@ const ProjectPage = ({ title, image, description }) => {
 
 	return (
 		<div className="project-page">
-			<div>
+			<div className="project-page__bak-btn">
 				<img
 					src={back}
 					alt="Back"
-					className="project-page__bak-btn"
 					onClick={() => history.push('/home')}
 				/>
 			</div>
 
-			<h1>{title}</h1>
-
 			<div className="project-page__project">
-				<img
-					src={image}
-					alt={title}
-					className="project-page__project__img"
-				/>
-				<aside>
-					<div dangerouslySetInnerHTML={{ __html: description }}></div>
-					<button>View Live Site</button>
-				</aside>
-			</div>
-			<div className="project-page__pics">
-				<div className="project-page__pics-pic">
-					<img src="" alt="" />
+				<h1>{title}</h1>
+				<div className="project-page__project__i__needed__this__to__make__flex__work">
+					<img
+						src={image}
+						alt={title}
+						className="project-page__project__img"
+					/>
+					<aside>
+						<div
+							className="project-page__project__description"
+							dangerouslySetInnerHTML={{ __html: description }}
+						></div>
+						<div
+							className="project-page__project__description"
+							dangerouslySetInnerHTML={{ __html: description }}
+						></div>
+						<button>View Live Site</button>
+					</aside>
 				</div>
-				<div className="project-page__pics-pic">
-					<img src="" alt="" />
+				<div className="project-page__project__pics">
+					<div className="project-page__project__pics-pic">
+						<img src="" alt="" />
+					</div>
+					<div className="project-page__project__pics-pic">
+						<img src="" alt="" />
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,3 +1,37 @@
+#root {
+	overflow: hidden;
+}
+.head {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 2rem 0;
+	width: 100%;
+	// @include bp-med {
+	// 	margin: 2rem 0;
+	// 	// width: ;
+	// }
+
+	// @include bp-med {
+	// 	width: 80%;
+	// }
+	.head__logo-holder {
+		width: 40%;
+		display: flex;
+		@include bp-med {
+			width: 30%;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.head__info {
+		line-height: 2rem;
+		h2 {
+			font-size: 2.5rem;
+		}
+	}
+}
 .menu__nav {
 	display: flex;
 	flex-direction: column;
@@ -36,9 +70,9 @@
 	background: #171616;
 	width: 1.5rem;
 	height: 3rem;
-	// left: 100%;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: 2;
 
 	.menu__tab-line {
 		height: 1.5rem;
@@ -71,51 +105,336 @@
 	}
 }
 
-.head {
-	display: flex;
-}
 .all-projects {
 	display: flex;
 	flex-direction: column;
-}
-
-.project {
-	display: flex;
-	&.project--flipped {
-		flex-direction: row-reverse;
-	}
-}
-
-.project-info {
-	display: none;
-	@include bp-med {
+	.project {
 		display: flex;
-		flex-direction: column;
+		margin: 8rem 5rem;
+		.constellation-definer {
+			display: flex;
+			img {
+				@include bp-med {
+					transform: scale(1.25);
+				}
+			}
+		}
+		.project-info {
+			display: none;
+			@include bp-med {
+				display: flex;
+				flex-direction: column;
+				align-content: flex-end;
+				align-items: flex-start;
+				justify-content: space-evenly;
+				margin-left: 4rem;
+				h2 {
+					font-size: 2.5rem;
+					text-align: left;
+				}
+				p {
+					line-height: 1.5rem;
+					font-size: 1.1rem;
+					width: 70%;
+					text-align: left;
+				}
+			}
+		}
+
+		&.project--flipped {
+			flex-direction: row-reverse;
+			.constellation-definer {
+				display: flex;
+				img {
+					@include bp-med {
+						transform: scale(1.25);
+					}
+				}
+			}
+			.project-info {
+				display: none;
+				@include bp-med {
+					display: flex;
+					flex-direction: column;
+					// align-content: flex-end;
+					align-items: flex-end;
+					justify-content: space-evenly;
+					margin-right: 4rem;
+					h2 {
+						font-size: 2.5rem;
+						text-align: right;
+					}
+					p {
+						line-height: 1.5rem;
+						font-size: 1.1rem;
+						width: 70%;
+						text-align: right;
+					}
+				}
+			}
+		}
 	}
 }
 
+.modal-overlay {
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+	position: absolute;
+}
 .project-modal {
 	background-color: rgba(#000, 0.9);
 	left: 50%;
 	min-width: 450px;
 	padding: 2rem;
 	position: fixed;
-	opacity: 0;
+	// opacity: 0;
+	display: none;
 	pointer-events: none;
 	top: 50%;
 	transform: translate3d(-50%, -30%, 0);
 	transition: all 0.3s ease-in;
+	z-index: 2;
 
 	&.project-modal--show {
-		opacity: 1;
+		// opacity: 1;
+		display: flex;
+		flex-direction: column;
 		pointer-events: all;
 		transform: translate3d(-50%, -50%, 0);
+		.cls-butt-definer {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.constellation-definer {
+			display: flex;
+			justify-content: center;
+		}
+		.project-info-modal {
+			display: flex;
+			flex-direction: column;
+
+			margin: 0 14%;
+			align-items: center;
+			h2 {
+				margin: 1rem 0;
+			}
+			p {
+				text-align: left;
+				margin: 1rem 0;
+				line-height: 2rem;
+			}
+			button {
+				margin: 1rem 0;
+			}
+		}
 	}
 }
 
+.about {
+	display: flex;
+	margin: 15rem auto;
+	// width: 80%;
+	justify-content: space-evenly;
+	.about__pic {
+		display: none;
+		@include bp-med {
+			display: flex;
+			width: 30%;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.about__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 60%;
+		line-height: 4rem;
+		h2 {
+			font-size: 2rem;
+			/* margin: 2rem; */
+			width: 100%;
+			text-align: left;
+		}
+		p {
+			// margin: 2rem;
+			line-height: 2.4rem;
+		}
+	}
+}
 .skills {
 	background-image: url(../img/aurora.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15rem;
+	padding-bottom: 25rem;
+	@include bp-med {
+		padding-bottom: 35rem;
+	}
+	.expertise-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 2.5rem;
+		@include bp-med {
+			width: 70%;
+		}
+
+		h2 {
+			font-size: 2rem;
+			@include bp-med {
+				margin: 4rem;
+			}
+		}
+		.skills__expertise {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			.skills__definer {
+				width: 15%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 9%;
+				@include bp-med {
+					margin: 5%;
+				}
+			}
+		}
+	}
+	.experience-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2.5rem;
+		@include bp-med {
+			width: 70%;
+			margin-top: 8.5rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+			@include bp-med {
+				margin: 4rem;
+			}
+		}
+		.skills__experience {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			.skills__definer {
+				width: 15%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 9%;
+			}
+		}
+	}
+}
+footer {
+	position: relative;
+	// bottom: 100%;
+	h2 {
+		margin: 2rem;
+	}
+	.trees-container {
+		width: 100vw;
+		position: relative;
+		bottom: -1px;
+		// z-index: 1;
+		transform: scale(1.5);
+		img {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	.contact-container {
+		display: flex;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// z-index: 2;
+		.contact-at {
+			display: flex;
+			width: 50%;
+			justify-content: space-around;
+		}
+	}
+	span {
+		margin: 2rem;
+	}
+}
+.project-page {
+	.project-page__bak-btn {
+		position: absolute;
+		padding: 0.5rem;
+	}
+	.project-page__project {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		/* margin-top: 0rem; */
+		padding-top: 1.9rem;
+		h1 {
+			text-align: center;
+		}
+		.project-page__project__i__needed__this__to__make__flex__work {
+			display: flex;
+			flex-direction: column;
+			@include bp-med {
+				flex-direction: row;
+				margin: 5rem 0;
+			}
+			img {
+				@include bp-med {
+					width: 55%;
+				}
+			}
+			aside {
+				margin: 0 1rem;
+				@include bp-med {
+					display: flex;
+					width: 45%;
+					flex-direction: column;
+					justify-content: center;
+				}
+				.project-page__project__description {
+					line-height: 1.5rem;
+					@include bp-med {
+						line-height: 2rem;
+					}
+				}
+				button {
+					float: right;
+					margin: 1.5rem 0;
+					@include bp-med {
+						float: none;
+					}
+				}
+			}
+		}
+		.project-page__project__pics {
+			display: flex;
+			justify-content: center;
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 10rem;
+			.project-page__project__pics-pic {
+				width: 400px;
+				height: 400px;
+				background-color: black;
+			}
+		}
+	}
 }

@@ -32,11 +32,12 @@ import contact3 from '../img/contact/linkedin.png';
 const data = {
 	activeProjectId: null,
 	modalShow: false,
+	projectsFlipped: false,
 	menuShow: false,
 	projects: [
 		{
 			id: 'project-title-1',
-			title: 'Studio Ghibli VUE Project',
+			title: 'Studio Ghibli VUE Project'.toUpperCase(),
 			image: project0,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -50,7 +51,7 @@ const data = {
 		},
 		{
 			id: 'project-title-2',
-			title: 'Planetary Rotation Key Frames',
+			title: 'Planetary Rotation Key Frames'.toUpperCase(),
 			image: project1,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -64,7 +65,7 @@ const data = {
 		},
 		{
 			id: 'project-title-3',
-			title: 'SEO Tattoo  Website',
+			title: 'SEO Tattoo  Website'.toUpperCase(),
 			image: project2,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -78,7 +79,7 @@ const data = {
 		},
 		{
 			id: 'project-title-4',
-			title: 'Pokemon Finder',
+			title: 'Pokemon Finder'.toUpperCase(),
 			image: project3,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -92,7 +93,7 @@ const data = {
 		},
 		{
 			id: 'project-title-5',
-			title: 'Southeast Succulents redesign',
+			title: 'Southeast Succulents redesign'.toUpperCase(),
 			image: project4,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -106,7 +107,7 @@ const data = {
 		},
 		{
 			id: 'project-title-6',
-			title: 'Mind Brain ',
+			title: 'Mind Brain'.toUpperCase(),
 			image: project5,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -120,7 +121,7 @@ const data = {
 		},
 		{
 			id: 'project-title-7',
-			title: 'Mafia Side Scroller with GSAP',
+			title: 'Mafia Side Scroller with GSAP'.toUpperCase(),
 			image: project6,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -134,7 +135,7 @@ const data = {
 		},
 		{
 			id: 'project-title-8',
-			title: 'Spotify Stats Redesign',
+			title: 'Spotify Stats Redesign'.toUpperCase(),
 			image: project7,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -148,7 +149,7 @@ const data = {
 		},
 		{
 			id: 'project-title-9',
-			title: 'Renewable Energy Redesign',
+			title: 'Renewable Energy Redesign'.toUpperCase(),
 			image: project8,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -162,7 +163,7 @@ const data = {
 		},
 		{
 			id: 'project-title-10',
-			title: 'LED Ping-Pong Ball Clock',
+			title: 'LED Ping-Pong Ball Clock'.toUpperCase(),
 			image: project9,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -176,7 +177,7 @@ const data = {
 		},
 		{
 			id: 'project-title-11',
-			title: 'PHP DND Character Creator ',
+			title: 'PHP DND Character Creator'.toUpperCase(),
 			image: project10,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis

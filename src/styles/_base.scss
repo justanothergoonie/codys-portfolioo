@@ -42,6 +42,7 @@ h1,
 h2 {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 600;
+	font-size: 1.5rem;
 	@include bp-med {
 		font-size: 3rem;
 	}
@@ -49,6 +50,7 @@ h2 {
 p {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
+	font-size: 1.1rem;
 	@include bp-med {
 		font-size: 1.1rem;
 	}
@@ -57,8 +59,11 @@ button {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 600;
 	color: white;
+	font-size: 1.2rem;
 	background-color: #71d9f4;
 	border: none;
 	width: 166px;
 	height: 55px;
+	-webkit-box-shadow: 0px 0px 10px 3px #71d9f4;
+	box-shadow: 0px 0px 10px 3px #71d9f4;
 }

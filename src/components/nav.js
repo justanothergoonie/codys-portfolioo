@@ -13,6 +13,7 @@ const Menu = styled.div`
 	top: 0;
 	margin-left: ${(props) => (props.open ? '0' : '-100%')};
 	transition: all 0.3s ease;
+	z-index: 3;
 `;
 
 const Nav = () => {
@@ -37,16 +38,16 @@ const Nav = () => {
 					<span className="nav__header">Never Say Die</span>
 					<nav>
 						<ul>
-							<a href="/">
+							<a href="#work">
 								<li>Work</li>
 							</a>
-							<a href="/">
+							<a href="#about">
 								<li>About</li>
 							</a>
-							<a href="/">
+							<a href="#skills">
 								<li>Skills</li>
 							</a>
-							<a href="/">
+							<a href="#contact">
 								<li>Contact</li>
 							</a>
 						</ul>
