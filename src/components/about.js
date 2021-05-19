@@ -1,6 +1,6 @@
-const About = () => {
+const About = ({ reference }) => {
 	return (
-		<div className="about" id="about">
+		<div className="about" id="about" ref={reference}>
 			<div className="about__pic">
 				<img src="" alt="me" className="me" />
 			</div>

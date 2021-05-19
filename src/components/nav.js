@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { Context } from '../store/store';
 import styled from 'styled-components';
 
 const Menu = styled.div`
@@ -16,19 +17,33 @@ const Menu = styled.div`
 	z-index: 3;
 `;
 
-const Nav = () => {
-	const [open, setOpen] = useState(false);
+const Nav = ({ scrollTo, open }) => {
+	const [state, dispatch] = useContext(Context);
+	console.log(state.menuShow);
 	return (
 		<div className="menu">
-			<div className="menu__tab--open" onClick={() => setOpen(!open)}>
+			<div
+				className="menu__tab--open"
+				onClick={() =>
+					dispatch({
+						type: 'TOGGLE_MENU_SHOW',
+						payload: !state.menuShow,
+					})
+				}
+			>
 				<div className="menu__tab-line"></div>
 				<div className="menu__tab-line"></div>
 				<div className="menu__tab-line"></div>
 			</div>
-			<Menu open={open}>
+			<Menu open={state.menuShow}>
 				<div
 					className="menu__tab--close"
-					onClick={() => setOpen(!open)}
+					onClick={() =>
+						dispatch({
+							type: 'TOGGLE_MENU_SHOW',
+							payload: !state.menuShow,
+						})
+					}
 				>
 					<div className="menu__tab-line"></div>
 					<div className="menu__tab-line"></div>
@@ -38,18 +53,13 @@ const Nav = () => {
 					<span className="nav__header">Never Say Die</span>
 					<nav>
 						<ul>
-							<a href="#work">
-								<li>Work</li>
-							</a>
-							<a href="#about">
-								<li>About</li>
-							</a>
-							<a href="#skills">
-								<li>Skills</li>
-							</a>
-							<a href="#contact">
-								<li>Contact</li>
-							</a>
+							<li onClick={() => scrollTo('work')}>Work</li>
+
+							<li onClick={() => scrollTo('about')}>About</li>
+
+							<li onClick={() => scrollTo('skills')}>Skills</li>
+
+							<li onClick={() => scrollTo('contact')}>Contact</li>
 						</ul>
 					</nav>
 				</div>

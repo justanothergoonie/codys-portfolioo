@@ -16,11 +16,6 @@ const reducer = (state, action) => {
 				...state,
 				menuShow: action.payload,
 			};
-		case 'TOGGLE_FLIPPED_PROJECTS':
-			return {
-				...state,
-				flipProjects: action.payload,
-			};
 		default:
 			return state;
 	}

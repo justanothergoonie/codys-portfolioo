@@ -1,12 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState, useRef } from 'react';
 import { Context } from '../store/store';
 import { useHistory } from 'react-router-dom';
 
 import closeButton from '../img/close-btn.png';
 
-const ProjectModal = ({ show, hideModal, link }) => {
+const ProjectModal = ({ show, hideModal }) => {
 	const history = useHistory();
+	const ref = useRef();
 	const [project, setProject] = useState(null);
+
 	const [state] = useContext(Context);
 	const modalClass = show
 		? 'project-modal project-modal--show'
@@ -21,8 +23,7 @@ const ProjectModal = ({ show, hideModal, link }) => {
 
 	return project ? (
 		<>
-			{/* <div className="modal-overlay" onClick={hideModal}></div> */}
-			<div className={modalClass}>
+			<div ref={ref} className={modalClass}>
 				<div className="cls-butt-definer">
 					<img
 						src={closeButton}
@@ -42,7 +43,11 @@ const ProjectModal = ({ show, hideModal, link }) => {
 				<div className="project-info-modal">
 					<h2>{project.title}</h2>
 					<p>{project.previewDescription}</p>
-					<button onClick={() => history.push(link)}>VIEW</button>
+					<button
+						onClick={() => history.push(`/projects/${project.id}`)}
+					>
+						VIEW
+					</button>
 				</div>
 			</div>
 		</>

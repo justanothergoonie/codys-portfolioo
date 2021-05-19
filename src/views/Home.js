@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import { useWindowSize } from '../utilitys/hooks';
 
 import Nav from '../components/nav';
@@ -9,14 +9,38 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import trees from '../img/trees.png';
 import Contact from '../components/footer';
+import Background from '../components/background';
 import { Context } from '../store/store';
+
 // import styled from 'styled-components';
 
 export default function Home() {
 	const [state, dispatch] = useContext(Context);
+	const workRef = useRef();
+	const aboutRef = useRef();
+	const skillsRef = useRef();
+	const contactRef = useRef();
 	const size = useWindowSize();
-	const displayModal = size.width < 1024;
-	const flipProjects = size.width < 1024;
+	const displayModal = size.width < 768;
+
+	const scrollTo = (section) => {
+		const scrollY = {
+			work: workRef.current.offsetTop,
+			about: aboutRef.current.offsetTop,
+			skills: skillsRef.current.offsetTop,
+			contact: contactRef.current.offsetTop,
+		}[section];
+
+		window.scrollTo({
+			top: scrollY,
+			left: 0,
+			behavior: 'smooth',
+		});
+		dispatch({
+			type: 'TOGGLE_MENU_SHOW',
+			payload: !state.menuShow,
+		});
+	};
 
 	const showModal = (id) => {
 		dispatch({ type: 'SET_ACTIVE_PROJECT', payload: id });
@@ -25,23 +49,19 @@ export default function Home() {
 	const hideModal = () => {
 		dispatch({ type: 'TOGGLE_MODAL_SHOW', payload: state.show });
 	};
-	// const flippedProjects = () => {
-	// 	dispatch({ type: 'TOGGLE_FLIPPED_PROJECTS', payload: !state.show });
-	// }
-
+	console.log(size, displayModal);
 	return (
 		<div className="wrap">
+			<Background />
 			{displayModal ? (
 				<ProjectModal
 					show={state.modalShow}
 					hideModal={() => hideModal()}
 				/>
 			) : null}
-			{/* {flipProjects ? <ProjectCard show={state.projectsFlipped} /> : null} */}
-			{/* how would i center projects on less then 1024 */}
-			<Nav />
+			<Nav scrollTo={(s) => scrollTo(s)} />
 			<Head />
-			<div className="all-projects" id="work">
+			<div className="all-projects" id="work" ref={workRef}>
 				{state.projects.map((project, index) => {
 					const { image, previewDescription, id, title } = project;
 					const flipped = index % 2 === 0;
@@ -61,9 +81,9 @@ export default function Home() {
 					);
 				})}
 			</div>
-			<About />
+			<About reference={aboutRef} />
 
-			<div className="skills" id="skills">
+			<div className="skills" id="skills" ref={skillsRef}>
 				<div className="expertise-container">
 					<h2>EXPERTISE</h2>
 					<div className="skills__expertise">
@@ -99,7 +119,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<footer id="contact">
+			<footer id="contact" ref={contactRef}>
 				<div className="trees-container">
 					<img src={trees} alt="" />
 				</div>
