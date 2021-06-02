@@ -8,11 +8,7 @@ const ProjectPage = ({ title, image, description }) => {
 	return (
 		<div className="project-page">
 			<div className="project-page__bak-btn">
-				<img
-					src={back}
-					alt="Back"
-					onClick={() => history.push('/home')}
-				/>
+				<img src={back} alt="Back" onClick={() => history.push('/')} />
 			</div>
 
 			<div className="project-page__project">

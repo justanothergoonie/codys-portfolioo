@@ -13,6 +13,9 @@ const ProjectModal = ({ show, hideModal }) => {
 	const modalClass = show
 		? 'project-modal project-modal--show'
 		: 'project-modal';
+	const modalOverlayClass = show
+		? 'modal-overlay modal-overlay--show'
+		: 'modal-overlay';
 
 	useEffect(() => {
 		const selectedProject = state.projects.filter(
@@ -23,6 +26,7 @@ const ProjectModal = ({ show, hideModal }) => {
 
 	return project ? (
 		<>
+			<div className={modalOverlayClass} onClick={hideModal}></div>
 			<div ref={ref} className={modalClass}>
 				<div className="cls-butt-definer">
 					<img

@@ -1,5 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Context } from '../store/store';
+import { debounce } from '../utilities/helpers';
 import styled from 'styled-components';
 
 const Menu = styled.div`
@@ -13,13 +14,35 @@ const Menu = styled.div`
 	left: 0;
 	top: 0;
 	margin-left: ${(props) => (props.open ? '0' : '-100%')};
-	transition: all 0.3s ease;
+	transition: all 0.3s ease-in-out;
 	z-index: 3;
 `;
 
 const Nav = ({ scrollTo, open }) => {
+	const [prevScrollPos, setPrevScrollPos] = useState(0);
+	// const [visible, setVisible] = useState(true);
 	const [state, dispatch] = useContext(Context);
 	console.log(state.menuShow);
+
+	const handleScroll = debounce(() => {
+		const currentScrollPos = window.pageYOffset;
+		setPrevScrollPos(currentScrollPos);
+		if (state.menuShow && prevScrollPos < currentScrollPos) {
+			dispatch({
+				type: 'TOGGLE_MENU_SHOW',
+				payload: !state.menuShow,
+			});
+
+			console.log('if', state.menuShow, prevScrollPos, currentScrollPos);
+		}
+		console.log('not if', state.menuShow, prevScrollPos, currentScrollPos);
+	}, 100);
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [handleScroll]);
+
 	return (
 		<div className="menu">
 			<div

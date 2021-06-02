@@ -1,7 +1,6 @@
-import React, { useContext, useRef } from 'react';
-import { useWindowSize } from '../utilitys/hooks';
-
-import Nav from '../components/nav';
+import React, { useContext } from 'react';
+import { useWindowSize } from '../utilities/hooks';
+// import { iconChecker } from '../utilities/iconChecker';
 import Head from '../components/header';
 import ProjectCard from '../components/projectCard';
 import ProjectModal from '../components/projectModal';
@@ -9,38 +8,14 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import trees from '../img/trees.png';
 import Contact from '../components/footer';
-import Background from '../components/background';
+
 import { Context } from '../store/store';
 
-// import styled from 'styled-components';
-
-export default function Home() {
+export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 	const [state, dispatch] = useContext(Context);
-	const workRef = useRef();
-	const aboutRef = useRef();
-	const skillsRef = useRef();
-	const contactRef = useRef();
+
 	const size = useWindowSize();
 	const displayModal = size.width < 768;
-
-	const scrollTo = (section) => {
-		const scrollY = {
-			work: workRef.current.offsetTop,
-			about: aboutRef.current.offsetTop,
-			skills: skillsRef.current.offsetTop,
-			contact: contactRef.current.offsetTop,
-		}[section];
-
-		window.scrollTo({
-			top: scrollY,
-			left: 0,
-			behavior: 'smooth',
-		});
-		dispatch({
-			type: 'TOGGLE_MENU_SHOW',
-			payload: !state.menuShow,
-		});
-	};
 
 	const showModal = (id) => {
 		dispatch({ type: 'SET_ACTIVE_PROJECT', payload: id });
@@ -50,16 +25,16 @@ export default function Home() {
 		dispatch({ type: 'TOGGLE_MODAL_SHOW', payload: state.show });
 	};
 	console.log(size, displayModal);
+	// iconChecker();
 	return (
 		<div className="wrap">
-			<Background />
 			{displayModal ? (
 				<ProjectModal
 					show={state.modalShow}
 					hideModal={() => hideModal()}
 				/>
 			) : null}
-			<Nav scrollTo={(s) => scrollTo(s)} />
+
 			<Head />
 			<div className="all-projects" id="work" ref={workRef}>
 				{state.projects.map((project, index) => {
@@ -125,7 +100,7 @@ export default function Home() {
 				</div>
 
 				<div className="contact-container">
-					<h2>CONTACT ME</h2>
+					{/* <h2>CONTACT ME</h2> */}
 					<div className="contact-at">
 						{state.contactInfo.map((contact, index) => {
 							const { alt, image, link } = contact;
@@ -140,7 +115,16 @@ export default function Home() {
 						})}
 					</div>
 
-					<span>Website Design by Abigail Chung</span>
+					<span>
+						Website Design by{' '}
+						<a
+							className="abi"
+							href="http://www.abigailchung.com"
+							rel="noopener noreferrer"
+						>
+							Abigail Chung
+						</a>{' '}
+					</span>
 				</div>
 			</footer>
 		</div>

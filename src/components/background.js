@@ -1,6 +1,7 @@
 // import '../styles/';
 import React, { useEffect } from 'react';
 import star from '../img/star.png';
+// import star from '../img/star-12.png';
 const Background = () => {
 	useEffect(() => {
 		const THREE = window.THREE;

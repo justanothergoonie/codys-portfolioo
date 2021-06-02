@@ -3,7 +3,7 @@
 }
 .head {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	margin: 2rem 0;
 	width: 100%;
@@ -18,9 +18,20 @@
 		}
 	}
 	.head__info {
-		line-height: 2rem;
-		h2 {
-			font-size: 2.5rem;
+		line-height: 3rem;
+		margin-left: 1rem;
+
+		h1 {
+			font-size: 2.8rem;
+			@include bp-med {
+				font-size: 3.2rem;
+			}
+		}
+		span {
+			font-size: 1.3rem;
+			@include bp-med {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
@@ -65,6 +76,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 2;
+	cursor: pointer;
 
 	.menu__tab-line {
 		height: 1.5rem;
@@ -87,6 +99,7 @@
 	left: 100%;
 	top: 50%;
 	transform: translateY(-50%);
+	cursor: pointer;
 	.menu__tab-line {
 		height: 1.5rem;
 		width: 1px;
@@ -104,6 +117,9 @@
 	.project {
 		display: flex;
 		margin: 8rem 5rem;
+		@include bp-med {
+			margin: 8rem 2rem;
+		}
 		.constellation-definer {
 			display: flex;
 			img {
@@ -172,8 +188,13 @@
 .modal-overlay {
 	width: 100vw;
 	height: 100vh;
-	z-index: 0;
-	position: absolute;
+	z-index: 5;
+	// background-color: red;
+	position: fixed;
+	display: none;
+	&.modal-overlay--show {
+		display: block;
+	}
 }
 .project-modal {
 	background-color: rgba(#000, 0.65);
@@ -187,7 +208,7 @@
 	top: 50%;
 	transform: translate3d(-50%, -30%, 0);
 	transition: all 0.3s ease-in;
-	z-index: 3;
+	z-index: 6;
 
 	&.project-modal--show {
 		// opacity: 1;
@@ -198,6 +219,7 @@
 		.cls-butt-definer {
 			display: flex;
 			justify-content: flex-end;
+			cursor: pointer;
 		}
 		.constellation-definer {
 			display: flex;
@@ -371,6 +393,7 @@ footer {
 	.project-page__bak-btn {
 		position: absolute;
 		padding: 0.5rem;
+		cursor: pointer;
 	}
 	.project-page__project {
 		display: flex;
@@ -438,4 +461,44 @@ canvas {
 	top: 0;
 	margin: 0;
 	z-index: -1;
+}
+// .container {
+// 	position: relative;
+// 	top: 0;
+// 	left: 0;
+// 	height: 100vh;
+// 	width: 100%;
+// }
+
+.page {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.wrap {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.page-enter {
+	opacity: 0;
+	transform: scale3d(1, 1, 1);
+}
+
+.page-enter-active {
+	opacity: 1;
+	transform: scale3d(2, 2, 2);
+	transition: opacity 1s, transform 1s;
+}
+
+.page-exit {
+	opacity: 1;
+	transform: scale3d(1, 1, 1);
+}
+
+.page-exit-active {
+	opacity: 0;
+	transform: scale3d(0, 0, 0);
+	transition: opacity 1s, transform 1s;
 }
