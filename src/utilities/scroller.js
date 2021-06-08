@@ -7,9 +7,9 @@ const Scroller = function () {
 	const onScroll = () => {
 		const scrollY = window.scrollY; //Don't get confused by what's scrolling - It's not the window
 		const scroll = myRef.current.scrollTop;
-		console.log(
-			`onScroll, window.scrollY: ${scrollY} myRef.scrollTop: ${scroll}`
-		);
+		// console.log(
+		// 	`onScroll, window.scrollY: ${scrollY} myRef.scrollTop: ${scroll}`
+		// );
 		setScrollTop(scroll);
 	};
 

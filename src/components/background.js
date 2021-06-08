@@ -5,7 +5,7 @@ import star from '../img/star.png';
 const Background = () => {
 	useEffect(() => {
 		const THREE = window.THREE;
-		console.log(THREE);
+		// console.log(THREE);
 		let scene, camera, renderer, starGeo, stars;
 		function init() {
 			//create scene object
@@ -21,7 +21,7 @@ const Background = () => {
 			camera.rotation.x = Math.PI / 2;
 			//setup renderer
 			renderer = new THREE.WebGLRenderer({ alpha: true });
-			console.log(renderer.domElement);
+			// console.log(renderer.domElement);
 			renderer.setSize(window.innerWidth, window.innerHeight);
 			document.body.appendChild(renderer.domElement);
 			starGeo = new THREE.Geometry();
@@ -46,7 +46,7 @@ const Background = () => {
 			});
 			stars = new THREE.Points(starGeo, starMaterial);
 			scene.add(stars);
-			console.log(star);
+			// console.log(star);
 			animate();
 		}
 		//rendering loop

@@ -25,6 +25,7 @@ const ProjectCard = ({
 			<div className="project-info">
 				<h2>{title}</h2>
 				<p>{previewDescription}</p>
+
 				<button onClick={() => history.push(link)}>VIEW</button>
 			</div>
 		</div>

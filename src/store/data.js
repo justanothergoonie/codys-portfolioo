@@ -48,6 +48,7 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: '',
 		},
 		{
 			id: 'project-title-2',
@@ -62,10 +63,11 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: 'https://www.gooniedev.com/keyFrameSolarSystem/index.html',
 		},
 		{
 			id: 'project-title-3',
-			title: 'SEO Tattoo  Website'.toUpperCase(),
+			title: 'SEO Tattoo Website'.toUpperCase(),
 			image: project2,
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
@@ -76,6 +78,7 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: 'https://www.gooniedev.com/nguyenTattoos/index.html',
 		},
 		{
 			id: 'project-title-4',
@@ -90,6 +93,7 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: 'https://www.gooniedev.com/pokemonFinder/index.html',
 		},
 		{
 			id: 'project-title-5',
@@ -104,6 +108,7 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: 'https://www.gooniedev.com/southernSucculents/index.html',
 		},
 		{
 			id: 'project-title-6',
@@ -118,6 +123,7 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: '',
 		},
 		{
 			id: 'project-title-7',
@@ -132,6 +138,7 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: 'https://www.gooniedev.com/mafiaProject/index.html',
 		},
 		{
 			id: 'project-title-8',
@@ -146,6 +153,7 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: '',
 		},
 		{
 			id: 'project-title-9',
@@ -160,6 +168,7 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: 'https://www.gooniedev.com/sparkySpark/index.html',
 		},
 		{
 			id: 'project-title-10',
@@ -168,12 +177,8 @@ const data = {
 			previewDescription: `Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Corporis similique officiis
             quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
+			description: `The idea was to make a clock, but the purpose was to make it cool. Using an ArduinoUNO, 180 LEDS, 180 ping pong balls,a bit of wood and mat board a bright vibrant color changing display that could be used for more than just a clock was made, but i mostly use it to keep time, what could you use it for?`,
+			link: '',
 		},
 		{
 			id: 'project-title-11',
@@ -188,6 +193,7 @@ const data = {
                 consequatur fugiat, odit praesentium, quibusdam
                 veritatis debitis excepturi provident eos
                 temporibus?`,
+			link: '',
 		},
 	],
 	expertise: [

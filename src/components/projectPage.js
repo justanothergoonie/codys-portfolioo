@@ -1,9 +1,22 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { useEffect, useContext } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import back from '../img/back-btn.png';
+import { Context } from '../store/store';
 
-const ProjectPage = ({ title, image, description }) => {
+const ProjectPage = ({ title, image, description, link }) => {
 	const history = useHistory();
+	const location = useLocation();
+	const [state, dispatch] = useContext(Context);
+
+	const nav = document.querySelector('.menu');
+
+	useEffect(() => {
+		if (location.pathname !== '/') {
+			nav.classList.add('hidden');
+		} else {
+			nav.classList.remove('hidden');
+		}
+	}, [location]);
 
 	return (
 		<div className="project-page">
@@ -28,7 +41,9 @@ const ProjectPage = ({ title, image, description }) => {
 							className="project-page__project__description"
 							dangerouslySetInnerHTML={{ __html: description }}
 						></div>
-						<button>View Live Site</button>
+						<a href={link} rel="noopener noreferrer">
+							<button>View Live Site</button>
+						</a>
 					</aside>
 				</div>
 				<div className="project-page__project__pics">

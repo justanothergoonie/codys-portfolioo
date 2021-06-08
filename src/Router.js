@@ -45,7 +45,7 @@ const RouterArchitecture = () => {
 		{ path: '/', name: 'Home', Component: Home, props: homeProps },
 		{ path: '/projects/:id', name: 'Project', Component: Project },
 	];
-	console.log(routes);
+	// console.log(routes);
 	return (
 		<>
 			<Nav scrollTo={(s) => scrollTo(s)} />
@@ -53,7 +53,7 @@ const RouterArchitecture = () => {
 			<Router>
 				<Container>
 					{routes.map(({ path, Component, props }) => {
-						console.log(path, Component);
+						// console.log(path, Component);
 						return (
 							<Route key={path} exact path={path}>
 								{({ match }) => (

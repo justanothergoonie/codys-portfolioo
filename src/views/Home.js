@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useWindowSize } from '../utilities/hooks';
-// import { iconChecker } from '../utilities/iconChecker';
+import { iconChecker } from '../utilities/iconChecker';
 import Head from '../components/header';
 import ProjectCard from '../components/projectCard';
 import ProjectModal from '../components/projectModal';
@@ -24,8 +24,8 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 	const hideModal = () => {
 		dispatch({ type: 'TOGGLE_MODAL_SHOW', payload: state.show });
 	};
-	console.log(size, displayModal);
-	// iconChecker();
+	// console.log(size, displayModal);
+	iconChecker();
 	return (
 		<div className="wrap">
 			{displayModal ? (
@@ -100,7 +100,6 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 				</div>
 
 				<div className="contact-container">
-					{/* <h2>CONTACT ME</h2> */}
 					<div className="contact-at">
 						{state.contactInfo.map((contact, index) => {
 							const { alt, image, link } = contact;

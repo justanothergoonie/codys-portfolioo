@@ -3,18 +3,18 @@ import { useParams } from 'react-router-dom';
 import { Context } from '../store/store';
 
 import ProjectPage from '../components/projectPage';
-import Nav from '../components/nav';
-// import styled from 'styled-components';
 
 export default function Project() {
 	const [mounted, setMounted] = useState(false);
 	const [project, setProject] = useState(null);
-	const [state,] = useContext(Context);
+	const [state] = useContext(Context);
 	let params = useParams();
 
 	useEffect(() => {
 		if (!mounted) {
-			const selectedProject = state.projects.filter((project) => project.id === params.id)[0];
+			const selectedProject = state.projects.filter(
+				(project) => project.id === params.id
+			)[0];
 			setProject(selectedProject);
 			setMounted(!mounted);
 		}
@@ -22,9 +22,13 @@ export default function Project() {
 
 	return (
 		<div className="wrap">
-			<Nav />
 			{mounted ? (
-				<ProjectPage title={project.title} image={project.image} description={project.description} />
+				<ProjectPage
+					title={project.title}
+					image={project.image}
+					description={project.description}
+					link={project.link}
+				/>
 			) : (
 				<h1>Loading...</h1>
 			)}

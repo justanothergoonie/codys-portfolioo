@@ -20,9 +20,8 @@ const Menu = styled.div`
 
 const Nav = ({ scrollTo, open }) => {
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
-	// const [visible, setVisible] = useState(true);
+
 	const [state, dispatch] = useContext(Context);
-	console.log(state.menuShow);
 
 	const handleScroll = debounce(() => {
 		const currentScrollPos = window.pageYOffset;
@@ -32,10 +31,7 @@ const Nav = ({ scrollTo, open }) => {
 				type: 'TOGGLE_MENU_SHOW',
 				payload: !state.menuShow,
 			});
-
-			console.log('if', state.menuShow, prevScrollPos, currentScrollPos);
 		}
-		console.log('not if', state.menuShow, prevScrollPos, currentScrollPos);
 	}, 100);
 
 	useEffect(() => {

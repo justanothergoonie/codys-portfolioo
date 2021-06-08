@@ -20,7 +20,10 @@
 	.head__info {
 		line-height: 3rem;
 		margin-left: 1rem;
-
+		width: 50%;
+		@include bp-med {
+			width: auto;
+		}
 		h1 {
 			font-size: 2.8rem;
 			@include bp-med {
@@ -199,7 +202,8 @@
 .project-modal {
 	background-color: rgba(#000, 0.65);
 	left: 50%;
-	min-width: 450px;
+	min-width: 350px;
+	// height: 81%;
 	padding: 2rem;
 	position: fixed;
 	// opacity: 0;
@@ -209,6 +213,9 @@
 	transform: translate3d(-50%, -30%, 0);
 	transition: all 0.3s ease-in;
 	z-index: 6;
+	@include bp-med {
+		min-width: 450px;
+	}
 
 	&.project-modal--show {
 		// opacity: 1;
@@ -217,9 +224,12 @@
 		pointer-events: all;
 		transform: translate3d(-50%, -50%, 0);
 		.cls-butt-definer {
-			display: flex;
-			justify-content: flex-end;
+			// display: flex;
+			// justify-content: flex-end;
 			cursor: pointer;
+			position: absolute;
+			left: 85%;
+			top: 8%;
 		}
 		.constellation-definer {
 			display: flex;
@@ -400,8 +410,11 @@ footer {
 		flex-direction: column;
 		justify-content: center;
 		align-content: center;
-		/* margin-top: 0rem; */
-		padding-top: 1.9rem;
+
+		padding-top: 5rem;
+		@include bp-med {
+			padding-top: 1.9rem;
+		}
 		h1 {
 			text-align: center;
 		}
@@ -413,6 +426,7 @@ footer {
 				margin: 5rem 0;
 			}
 			img {
+				width: 100%;
 				@include bp-med {
 					width: 55%;
 				}
@@ -471,12 +485,10 @@ canvas {
 // }
 
 .page {
-	position: absolute;
 	height: 100%;
 	width: 100%;
 }
 .wrap {
-	position: absolute;
 	height: 100%;
 	width: 100%;
 }
@@ -501,4 +513,8 @@ canvas {
 	opacity: 0;
 	transform: scale3d(0, 0, 0);
 	transition: opacity 1s, transform 1s;
+}
+
+.abi:hover {
+	color: #71d9f4;
 }
