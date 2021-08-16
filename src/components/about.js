@@ -1,3 +1,6 @@
+import color from '../img/resumes/colorResume.jpg';
+import blacknwhite from '../img/resumes/bnwResume.jpg';
+
 const About = ({ reference }) => {
 	return (
 		<div className="about" id="about" ref={reference}>
@@ -17,6 +20,15 @@ const About = ({ reference }) => {
 					rem aspernatur laudantium tenetur laborum quaerat, iste ab
 					praesentium.
 				</p>
+				<div className="resume">
+					<h3>Resume</h3>
+					<a href={blacknwhite} download="Cody Powell's Resume">
+						<button>Black n' White</button>
+					</a>
+					<a href={color} download="Cody Powell's Resume">
+						<button>Color</button>
+					</a>
+				</div>
 			</div>
 		</div>
 	);

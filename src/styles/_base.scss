@@ -69,6 +69,7 @@ p {
 	}
 }
 button {
+	position: relative;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 600;
 	color: white;
@@ -77,7 +78,50 @@ button {
 	border: none;
 	width: 166px;
 	height: 55px;
+	// -webkit-box-shadow: 0px 0px 10px 3px #71d9f4;
+	// box-shadow: 0px 0px 10px 3px #71d9f4;
+	cursor: pointer;
+}
+button::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 	-webkit-box-shadow: 0px 0px 10px 3px #71d9f4;
 	box-shadow: 0px 0px 10px 3px #71d9f4;
-	cursor: pointer;
+	@include bp-med {
+		opacity: 0;
+		animation: buttonInOut 2s linear infinite;
+	}
+}
+@keyframes buttonInOut {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0.25;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 0.75;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: 0.25;
+	}
+	80% {
+		opacity: 0;
+	}
 }

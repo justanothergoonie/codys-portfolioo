@@ -45,10 +45,20 @@ const ProjectModal = ({ show, hideModal }) => {
 				</div>
 
 				<div className="project-info-modal">
-					<h2>{project.title}</h2>
+					{/* <h2>{project.title}</h2> */}
 					<p>{project.previewDescription}</p>
 					<button
-						onClick={() => history.push(`/projects/${project.id}`)}
+						onClick={() => {
+							document.querySelector(
+								'.page'
+							).style.transformOrigin =
+								'50% ' +
+								((window.scrollY + window.innerHeight / 2) /
+									document.body.scrollHeight) *
+									100 +
+								'%';
+							history.push(`/projects/${project.id}`);
+						}}
 					>
 						VIEW
 					</button>

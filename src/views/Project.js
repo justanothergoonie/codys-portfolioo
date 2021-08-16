@@ -9,7 +9,9 @@ export default function Project() {
 	const [project, setProject] = useState(null);
 	const [state] = useContext(Context);
 	let params = useParams();
-
+	var scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
 	useEffect(() => {
 		if (!mounted) {
 			const selectedProject = state.projects.filter(
@@ -17,6 +19,7 @@ export default function Project() {
 			)[0];
 			setProject(selectedProject);
 			setMounted(!mounted);
+			setTimeout(scrollToTop, 300);
 		}
 	}, [mounted, params.id, state.projects]);
 

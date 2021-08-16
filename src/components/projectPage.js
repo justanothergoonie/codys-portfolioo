@@ -37,12 +37,22 @@ const ProjectPage = ({ title, image, description, link }) => {
 							className="project-page__project__description"
 							dangerouslySetInnerHTML={{ __html: description }}
 						></div>
-						<div
+						{/* <div
 							className="project-page__project__description"
 							dangerouslySetInnerHTML={{ __html: description }}
-						></div>
-						<a href={link} rel="noopener noreferrer">
-							<button>View Live Site</button>
+						></div> */}
+						<div className="links">
+							<a
+								href={link}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<button>View Live Site</button>
+							</a>
+						</div>
+
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<button>View on Github</button>
 						</a>
 					</aside>
 				</div>

@@ -29,6 +29,7 @@ const RouterArchitecture = () => {
 			left: 0,
 			behavior: 'smooth',
 		});
+		console.log(scrollY, 'hello its scrolled');
 		dispatch({
 			type: 'TOGGLE_MENU_SHOW',
 			payload: !state.menuShow,
@@ -53,7 +54,6 @@ const RouterArchitecture = () => {
 			<Router>
 				<Container>
 					{routes.map(({ path, Component, props }) => {
-						// console.log(path, Component);
 						return (
 							<Route key={path} exact path={path}>
 								{({ match }) => (

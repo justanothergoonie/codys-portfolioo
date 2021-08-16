@@ -8,6 +8,7 @@ const ProjectCard = ({
 	flipped,
 	display,
 	showModal,
+	medium,
 }) => {
 	const history = useHistory();
 	const projectClass = flipped ? 'project project--flipped' : 'project';
@@ -21,12 +22,25 @@ const ProjectCard = ({
 					<img src={image} alt={title} />
 				)}
 			</div>
-
+			<h2 className="mobile-title">{title}</h2>
 			<div className="project-info">
-				<h2>{title}</h2>
+				<h2 className="desktop-title">{title}</h2>
 				<p>{previewDescription}</p>
-
-				<button onClick={() => history.push(link)}>VIEW</button>
+				<span>Technology used: {medium}</span>
+				<button
+					onClick={() => {
+						// this is some hacky nonsense
+						document.querySelector('.page').style.transformOrigin =
+							'50% ' +
+							((window.scrollY + window.innerHeight / 2) /
+								document.body.scrollHeight) *
+								100 +
+							'%';
+						history.push(link);
+					}}
+				>
+					VIEW
+				</button>
 			</div>
 		</div>
 	);

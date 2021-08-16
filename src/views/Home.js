@@ -38,7 +38,8 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 			<Head />
 			<div className="all-projects" id="work" ref={workRef}>
 				{state.projects.map((project, index) => {
-					const { image, previewDescription, id, title } = project;
+					const { image, previewDescription, id, title, medium } =
+						project;
 					const flipped = index % 2 === 0;
 
 					return (
@@ -49,6 +50,7 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 							id={id}
 							title={title}
 							image={image}
+							medium={medium}
 							previewDescription={previewDescription}
 							link={`/projects/${id}`}
 							flipped={flipped}
@@ -56,6 +58,7 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 					);
 				})}
 			</div>
+
 			<About reference={aboutRef} />
 
 			<div className="skills" id="skills" ref={skillsRef}>

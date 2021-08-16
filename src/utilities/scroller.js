@@ -7,9 +7,9 @@ const Scroller = function () {
 	const onScroll = () => {
 		const scrollY = window.scrollY; //Don't get confused by what's scrolling - It's not the window
 		const scroll = myRef.current.scrollTop;
-		// console.log(
-		// 	`onScroll, window.scrollY: ${scrollY} myRef.scrollTop: ${scroll}`
-		// );
+		console.log(
+			`onScroll, window.scrollY: ${scrollY} myRef.scrollTop: ${scroll}`
+		);
 		setScrollTop(scroll);
 	};
 
@@ -23,38 +23,7 @@ const Scroller = function () {
 				height: '100px',
 				overflow: 'scroll',
 			}}
-		>
-			<p>
-				This demonstrates how to get the scrollTop position within a
-				scrollable react component.
-			</p>
-			<p>ScrollTop is {scrollTop}</p>
-			<p>
-				This demonstrates how to get the scrollTop position within a
-				scrollable react component.
-			</p>
-			<p>ScrollTop is {scrollTop}</p>
-			<p>
-				This demonstrates how to get the scrollTop position within a
-				scrollable react component.
-			</p>
-			<p>ScrollTop is {scrollTop}</p>
-			<p>
-				This demonstrates how to get the scrollTop position within a
-				scrollable react component.
-			</p>
-			<p>ScrollTop is {scrollTop}</p>
-			<p>
-				This demonstrates how to get the scrollTop position within a
-				scrollable react component.
-			</p>
-			<p>ScrollTop is {scrollTop}</p>
-			<p>
-				This demonstrates how to get the scrollTop position within a
-				scrollable react component.
-			</p>
-			<p>ScrollTop is {scrollTop}</p>
-		</div>
+		></div>
 	);
 };
 

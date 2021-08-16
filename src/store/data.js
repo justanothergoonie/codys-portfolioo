@@ -9,6 +9,10 @@ import project7 from '../img/constellations/Constellations-08.png';
 import project8 from '../img/constellations/Constellations-09.png';
 import project9 from '../img/constellations/Constellations-10.png';
 import project10 from '../img/constellations/Constellations-11.png';
+import project11 from '../img/constellations/Constellations-12.png';
+import project12 from '../img/constellations/Constellations-13.png';
+import project13 from '../img/constellations/Constellations-14.png';
+import project14 from '../img/constellations/Constellations-15.png';
 
 import expert0 from '../img/skills/expertise/html.png';
 import expert1 from '../img/skills/expertise/css.png';
@@ -36,165 +40,167 @@ const data = {
 	menuShow: false,
 	projects: [
 		{
-			id: 'project-title-1',
-			title: 'Studio Ghibli VUE Project'.toUpperCase(),
-			image: project0,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
+			id: 'project-title-0',
+			title: 'Welcome'.toUpperCase(),
+			image: project11,
+			medium: 'React, 3.js, SCSS, HTML',
+			previewDescription: `This portfolio site is built on React, uses Three.js for the flying star animations,and a mix of CSS transforms and vanilla JS scrolling for the page transitions.`,
 			link: '',
+			gitLink: '',
 		},
 		{
-			id: 'project-title-2',
-			title: 'Planetary Rotation Key Frames'.toUpperCase(),
-			image: project1,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
-			link: 'https://www.gooniedev.com/keyFrameSolarSystem/index.html',
+			id: 'project-title-13',
+			title: 'Johnny Trapeze'.toUpperCase(),
+			image: project12,
+			medium: 'HTML, SCSS',
+			previewDescription: `This responsive single page (what would this type of site be called) uses CSS only hamburger buttons.`,
+			description: `This responsive single page (what would this type of site be called) uses CSS only hamburger buttons.`,
+			link: 'https://www.gooniedev.com/southernSucculents/index.html',
+			gitLink: '',
+		},
+		{
+			id: 'project-title-12',
+			title: 'Uni'.toUpperCase(),
+			image: project13,
+			medium: 'HTML, SCSS, JS',
+			previewDescription: `This responsive multi-page (what would this type of site be called), uses complex design elements and a JS driven hamburger button.`,
+			description: `This responsive multi-page (what would this type of site be called), uses complex design elements and a JS driven hamburger button.`,
+			link: 'https://www.gooniedev.com/southernSucculents/index.html',
+			gitLink: '',
+		},
+		{
+			id: 'project-title-5',
+			title: 'Southeast Succulents'.toUpperCase(),
+			image: project4,
+			medium: 'HTML, JS, SCSS',
+			previewDescription: `This responsive e-commerce website has complex angled buttons built with CSS pseudo-classes, custom animated drop-down select elements, and full ARIA accessability.`,
+			description: `This responsive e-commerce website has complex angled buttons built with CSS pseudo-classes, custom animated drop-down select elements, and full ARIA accessability.`,
+			link: 'https://www.gooniedev.com/southernSucculents/index.html',
+			gitLink: '',
+		},
+
+		{
+			id: 'project-title-9',
+			title: 'Third Wave Energy'.toUpperCase(),
+			image: project8,
+			medium: 'HTML, SCSS, JS, GSAP, SVG Animations',
+			previewDescription: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
+			description: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
+			link: 'https://www.gooniedev.com/sparkySpark/index.html',
+			gitLink: '',
 		},
 		{
 			id: 'project-title-3',
-			title: 'SEO Tattoo Website'.toUpperCase(),
+			title: 'Nguyening Tattoos'.toUpperCase(),
 			image: project2,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
+			medium: 'HTML, SCSS, JS',
+			previewDescription: `This responsive site has custom form field styling as well as functionality to prohibit access to those under a certain age, as well as full ARIA accessability. Design was created by consulting with the artist featured.`,
+			description: `This responsive site has custom form field styling as well as functionality to prohibit access to those under a certain age, as well as full ARIA accessability. Design was created by consulting with the artist featured.`,
 			link: 'https://www.gooniedev.com/nguyenTattoos/index.html',
+			gitLink: '',
 		},
 		{
 			id: 'project-title-4',
 			title: 'Pokemon Finder'.toUpperCase(),
 			image: project3,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
+			medium: 'HTML, JS, AXIOS, Bootstrap',
+			previewDescription: `This helper app for Pokemon Go! players uses the Google Maps API and a public Pokedex API to plot likely real world locations for finding in-game pokemon. It uses Axios for AJAX and Bootstrap for styling.`,
+			description: `This helper app for Pokemon Go! players uses the Google Maps API and a public Pokedex API to plot likely real world locations for finding in-game pokemon. It uses Axios for AJAX and Bootstrap for styling.`,
 			link: 'https://www.gooniedev.com/pokemonFinder/index.html',
+			gitLink: '',
 		},
 		{
-			id: 'project-title-5',
-			title: 'Southeast Succulents redesign'.toUpperCase(),
-			image: project4,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
-			link: 'https://www.gooniedev.com/southernSucculents/index.html',
+			id: 'project-title-1',
+			title: 'Ghiblipedia'.toUpperCase(),
+			image: project0,
+			medium: 'VUE, JS, CSS, HTML',
+			previewDescription: `This web app will tell anyone about anything Studio Ghibli related using VUE to create the app and a Ghibli API to provide the data needed, the Giphy API is also used to add some flavor.`,
+			description: `This web app will tell anyone about anything Studio Ghibli related using VUE to create the app and a Ghibli API to provide the data needed, the Giphy API is also used to add some flavor.`,
+			link: '',
+			gitLink: '',
+		},
+		{
+			id: 'project-title-7',
+			title: 'Mafia Experience'.toUpperCase(),
+			image: project6,
+			medium: 'Vanilla JS, GSAP, SVG Animations',
+			previewDescription: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG, Greensock animation platform, and vanilla JS. 
+			Special thanks to designers Maddie Sherlock and Nick Callender.`,
+			description: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG, Greensock animation platform, and vanilla JS. 
+			Special thanks to designers Maddie Sherlock and Nick Callender.`,
+			link: 'https://www.gooniedev.com/mafiaProject/index.html',
+			gitLink: '',
 		},
 		{
 			id: 'project-title-6',
 			title: 'Mind Brain'.toUpperCase(),
 			image: project5,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
+			medium: 'HTML, SCSS, GSAP, PHP',
+			previewDescription: `This web app was created with the purpose of being a huge mind map that starts with one word and spreads throughout the 10,000x10,000 plane and gets more and more chaotic as it goes. Using php it gets its data from a server so it can be displayed on any screen and you can add words from your phone and see them added to the screen in real time. GSAP is used to see the stylings you apply in real time on your phone. Special thanks to designers Maddie Sherlock and Nick Callender.`,
+			description: `This web app was created with the purpose of being a huge mind map that starts with one word and spreads throughout the 10,000x10,000 plane and gets more and more chaotic as it goes. Using php it gets its data from a server so it can be displayed on any screen and you can add words from your phone and see them added to the screen in real time. GSAP is used to see the stylings you apply in real time on your phone. Special thanks to designers Maddie Sherlock and Nick Callender.`,
 			link: '',
-		},
-		{
-			id: 'project-title-7',
-			title: 'Mafia Side Scroller with GSAP'.toUpperCase(),
-			image: project6,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
-			link: 'https://www.gooniedev.com/mafiaProject/index.html',
-		},
-		{
-			id: 'project-title-8',
-			title: 'Spotify Stats Redesign'.toUpperCase(),
-			image: project7,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
-			link: '',
-		},
-		{
-			id: 'project-title-9',
-			title: 'Renewable Energy Redesign'.toUpperCase(),
-			image: project8,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
-			link: 'https://www.gooniedev.com/sparkySpark/index.html',
-		},
-		{
-			id: 'project-title-10',
-			title: 'LED Ping-Pong Ball Clock'.toUpperCase(),
-			image: project9,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `The idea was to make a clock, but the purpose was to make it cool. Using an ArduinoUNO, 180 LEDS, 180 ping pong balls,a bit of wood and mat board a bright vibrant color changing display that could be used for more than just a clock was made, but i mostly use it to keep time, what could you use it for?`,
-			link: '',
+			gitLink: '',
 		},
 		{
 			id: 'project-title-11',
-			title: 'PHP DND Character Creator'.toUpperCase(),
-			image: project10,
-			previewDescription: `Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Corporis similique officiis
-            quidem id ad architecto totam eius hic.`,
-			description: `Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corporis similique officiis
-                quidem id ad architecto totam eius hic dicta
-                consequatur fugiat, odit praesentium, quibusdam
-                veritatis debitis excepturi provident eos
-                temporibus?`,
+			title: 'Node Messaging'.toUpperCase(),
+			image: project14,
+			medium: 'Node.js, SOCKET.io, Bootstrap, GULP',
+			previewDescription: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms. It was made using Node.js to create a local server and SOCKET.io to link two or more people to talk using GIFs brought in with the giphy API and then combined with a dictionary API to pull synonyms of the words from your message.`,
+			description: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms. It was made using Node.js to create a local server and SOCKET.io to link two or more people to talk using GIFs brought in with the giphy API and then combined with a dictionary API to pull synonyms of the words from your message.`,
 			link: '',
+			gitLink: '',
 		},
+		{
+			id: 'project-title-10',
+			title: 'Ping-Pong Clock'.toUpperCase(),
+			image: project9,
+			medium: 'Arduino Uno, RTC(Real Time Clock), C++',
+			previewDescription: `This physical real life clock was made with 180 LED lights and Ping Pong Balls, a RTC, and an Arduino Uno to run the code that makes it work. It required extensive planning and problem solving throughout its creation. `,
+			description: `This physical real life clock was made with 180 LED lights and Ping Pong Balls, a RTC, and an Arduino Uno to run the code that makes it work. It required extensive planning and problem solving throughout its creation. `,
+			link: '',
+			gitLink: '',
+		},
+		// {
+		// 	id: 'project-title-2',
+		// 	title: 'Our Solar System'.toUpperCase(),
+		// 	image: project1,
+		// 	previewDescription: `Lorem ipsum dolor sit amet consectetur
+		//     adipisicing elit. Corporis similique officiis
+		//     quidem id ad architecto totam eius hic.`,
+		// 	description: `Lorem ipsum dolor sit amet consectetur
+		//         adipisicing elit. Corporis similique officiis
+		//         quidem id ad architecto totam eius hic dicta
+		//         consequatur fugiat, odit praesentium, quibusdam
+		//         veritatis debitis excepturi provident eos
+		//         temporibus?`,
+		// 	link: 'https://www.gooniedev.com/keyFrameSolarSystem/index.html',
+		// },
+
+		// {
+		// 	id: 'project-title-8',
+		// 	title: 'Spotify Stats Redesign'.toUpperCase(),
+		// 	image: project7,
+		// 	previewDescription: `Lorem ipsum dolor sit amet consectetur
+		//     adipisicing elit. Corporis similique officiis
+		//     quidem id ad architecto totam eius hic.`,
+		// 	description: `Lorem ipsum dolor sit amet consectetur
+		//         adipisicing elit. Corporis similique officiis
+		//         quidem id ad architecto totam eius hic dicta
+		//         consequatur fugiat, odit praesentium, quibusdam
+		//         veritatis debitis excepturi provident eos
+		//         temporibus?`,
+		// 	link: '',
+		// },
+		// {
+		// 	id: 'project-title-9',
+		// 	title: 'Third Wave Energy'.toUpperCase(),
+		// 	image: project8,
+		// 	medium: 'HTML, SCSS, JS, GSAP, SVG Animations',
+		// 	previewDescription: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
+		// 	description: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
+		// 	link: 'https://www.gooniedev.com/sparkySpark/index.html',
+		// },
 	],
 	expertise: [
 		{
@@ -240,7 +246,6 @@ const data = {
 			image: expert6,
 		},
 	],
-
 	experience: [
 		{
 			id: 'experience0',
