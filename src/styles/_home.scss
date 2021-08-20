@@ -13,8 +13,424 @@
 		@include bp-med {
 			max-width: 15%;
 		}
-		img {
+		svg {
 			width: 100%;
+
+			#ship {
+				transform-origin: 90% 60%;
+				animation: shipBob 3s ease-in-out 0s infinite alternate;
+				@keyframes shipBob {
+					0% {
+						transform: translateY(0) rotate(0deg);
+					}
+					100% {
+						transform: translateY(-7%) rotate(-5deg);
+					}
+				}
+				#streak1 {
+					// animation: streakShots 1s ease-in-out 1s infinite alternate;
+					// transform-origin: 50% 70%;
+					// opacity: 0.9;
+				}
+				#streak2 {
+					// animation: streakShots 1s ease-in-out 2s infinite alternate;
+					// transform-origin: 100% 50%;
+				}
+				#streak3 {
+					// animation: streakShots 1s ease-in-out 3s infinite alternate;
+					// transform-origin: 100% 50%;
+				}
+
+				@keyframes streakShots {
+					0% {
+						transform: scaleX(0.75);
+						// opacity: 0.9;
+						// transform: translateX(0%);
+					}
+					100% {
+						transform: scaleX(1.25);
+						// opacity: 1;
+						// transform: translateX(-100%);
+					}
+				}
+			}
+			#stars {
+				#star {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 1s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-2 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 1s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-3 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 1s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-4 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 8s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-5 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 9s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 8s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 7s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-6 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 7s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-7 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 7s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 9s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 2.5s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-8 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 9s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 8s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-9 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 9s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 7s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 8s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-10 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 8s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 7s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-11 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 7s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 8s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-12 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 9s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 7s ease-in-out 0s infinite;
+						}
+					}
+				}
+				#star-13 {
+					path {
+						&:nth-child(1) {
+							opacity: 0;
+							animation: stars 2s ease-in-out 0s infinite;
+						}
+						&:nth-child(2) {
+							opacity: 0;
+							animation: stars 4s ease-in-out 0s infinite;
+						}
+						&:nth-child(3) {
+							opacity: 0;
+							animation: stars 5s ease-in-out 0s infinite;
+						}
+						&:nth-child(4) {
+							opacity: 0;
+							animation: stars 8s ease-in-out 0s infinite;
+						}
+						&:nth-child(5) {
+							opacity: 0;
+							animation: stars 3s ease-in-out 0s infinite;
+						}
+						&:nth-child(6) {
+							opacity: 0;
+							animation: stars 6s ease-in-out 0s infinite;
+						}
+					}
+				}
+				@keyframes stars {
+					0% {
+						opacity: 0;
+					}
+					50% {
+						opacity: 1;
+					}
+					100% {
+						opacity: 0;
+					}
+				}
+			}
 		}
 	}
 	.head__info {
@@ -119,15 +535,34 @@
 	// :nth-child(1) {
 	// 	display: none;
 	// }
+	// &:first-child {
+	// 	// color: red;
+	// 	// flex-direction: row;
+	// 	.constellation-definer {
+	// 		width: 50%;
+	// 		display: flex;
+	// 		justify-content: flex-end;
+	// 	}
+	// 	.project-info {
+	// 		width: 50%;
+	// 		margin-right: unset;
+	// 		margin-left: unset;
+	// 		align-items: flex-start;
+	// 	}
+	// }
 	.project {
 		display: flex;
 		flex-direction: column;
 		margin: 8rem 5rem;
 		text-align: center;
+
 		@include bp-med {
 			flex-direction: row;
 			text-align: unset;
 			margin: 8rem 2rem;
+		}
+		@include bp-large {
+			width: 70%;
 		}
 		.desktop-title {
 			display: none;
@@ -144,8 +579,8 @@
 
 		.constellation-definer {
 			display: flex;
-			opacity: 0;
-			animation: constellationInOut 3s linear infinite;
+			opacity: 1;
+			// animation: constellationInOut 3s linear infinite;
 			cursor: pointer;
 			@include bp-med {
 				animation: unset;
@@ -174,7 +609,7 @@
 				p {
 					line-height: 1.5rem;
 					font-size: 1.1rem;
-					width: 70%;
+					// width: 70%;
 					text-align: left;
 				}
 			}
@@ -208,13 +643,42 @@
 					p {
 						line-height: 1.5rem;
 						font-size: 1.1rem;
-						width: 70%;
+						// width: 70%;
 						text-align: right;
 					}
 				}
 			}
 		}
 		&:first-child {
+			// color: red;
+			flex-direction: column;
+			@include bp-med {
+				flex-direction: row;
+			}
+
+			.constellation-definer {
+				width: unset;
+				@include bp-med {
+					width: 50%;
+					display: flex;
+					justify-content: flex-end;
+					margin-right: 2rem;
+				}
+			}
+			.project-info {
+				width: 50%;
+				margin-right: unset;
+				margin-left: unset;
+				align-items: flex-start;
+				margin-left: 2rem;
+				p {
+					text-align: left;
+				}
+				button {
+					display: none;
+					// inner
+				}
+			}
 		}
 	}
 }
@@ -275,8 +739,17 @@
 			h2 {
 				margin: 1rem 0;
 			}
-			p {
+			textarea {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+					'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+					'Droid Sans', 'Helvetica Neue', sans-serif;
+				background-color: rgba(0, 0, 0, 0);
+				border: none;
+				color: white;
 				text-align: left;
+				font-size: 1.1rem;
+				width: 100%;
+				height: 10rem;
 				margin: 1rem 0;
 				line-height: 2rem;
 			}
@@ -320,11 +793,52 @@
 		.resume {
 			display: flex;
 			justify-content: space-between;
-			width: 80%;
-			align-items: center;
+			width: 100%;
+
 			align-self: flex-start;
+			flex-direction: column;
+			@include bp-med {
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+			}
 			h3 {
 				font-size: 2rem;
+			}
+			.links {
+				display: flex;
+				flex-direction: column;
+
+				justify-content: space-between;
+				@include bp-med {
+					width: 100%;
+					flex-direction: row;
+					justify-content: space-around;
+				}
+				a {
+					margin: 1rem 0;
+					display: flex;
+					align-items: center;
+					align-content: center;
+
+					@include bp-med {
+						width: 50%;
+						justify-content: center;
+					}
+					button {
+						display: flex;
+						align-items: center;
+						flex-direction: column;
+						justify-content: center;
+						width: 100%;
+						@include bp-med {
+							width: 50%;
+						}
+						span {
+							font-size: 0.8rem;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -432,8 +946,16 @@ footer {
 		// z-index: 2;
 		.contact-at {
 			display: flex;
-			width: 50%;
+			// width: 50%;
 			justify-content: space-around;
+			div {
+				width: 25%;
+				a {
+					img {
+						width: 100%;
+					}
+				}
+			}
 		}
 	}
 	span {
@@ -486,25 +1008,37 @@ footer {
 						line-height: 2rem;
 					}
 				}
-				button {
-					float: right;
-					margin: 1.5rem 0;
-					@include bp-med {
-						float: none;
+				.links {
+					display: flex;
+					width: 100%;
+					justify-content: space-between;
+					a {
+						width: 45%;
+						button {
+							margin: 1.5rem 0;
+							@include bp-med {
+								float: none;
+							}
+						}
 					}
 				}
 			}
 		}
 		.project-page__project__pics {
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			display: flex;
 			justify-content: space-around;
 			margin-bottom: 10rem;
+			@include bp-med {
+				flex-direction: row;
+			}
 			.project-page__project__pics-pic {
 				width: 400px;
 				height: 400px;
 				background-color: black;
+				margin-bottom: 5rem;
 			}
 		}
 	}

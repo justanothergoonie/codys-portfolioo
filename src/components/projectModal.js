@@ -45,8 +45,9 @@ const ProjectModal = ({ show, hideModal }) => {
 				</div>
 
 				<div className="project-info-modal">
-					{/* <h2>{project.title}</h2> */}
-					<p>{project.previewDescription}</p>
+					<textarea value={project.previewDescription}></textarea>
+					{/* <p>{project.previewDescription}</p> */}
+					<span>{project.medium}</span>
 					<button
 						onClick={() => {
 							document.querySelector(
