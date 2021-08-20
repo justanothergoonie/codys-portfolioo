@@ -31,6 +31,7 @@ export default function Project() {
 					image={project.image}
 					description={project.description}
 					link={project.link}
+					gitLink={project.gitLink}
 				/>
 			) : (
 				<h1>Loading...</h1>

@@ -3,7 +3,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 import back from '../img/back-btn.png';
 import { Context } from '../store/store';
 
-const ProjectPage = ({ title, image, description, link }) => {
+const ProjectPage = ({ title, image, description, link, gitLink }) => {
 	const history = useHistory();
 	const location = useLocation();
 	const [state, dispatch] = useContext(Context);
@@ -49,11 +49,14 @@ const ProjectPage = ({ title, image, description, link }) => {
 							>
 								<button>View Live Site</button>
 							</a>
+							<a
+								href={gitLink}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<button>View on Github</button>
+							</a>
 						</div>
-
-						<a href="" target="_blank" rel="noopener noreferrer">
-							<button>View on Github</button>
-						</a>
 					</aside>
 				</div>
 				<div className="project-page__project__pics">

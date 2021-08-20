@@ -10,24 +10,28 @@ const About = ({ reference }) => {
 			<div className="about__info">
 				<h2>ABOUT ME</h2>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptatibus temporibus eos nostrum incidunt tempore
-					eligendi fuga illum labore excepturi rem! Nesciunt quidem
-					sequi atque, illum nihil deleniti dicta deserunt reiciendis?
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Provident exercitationem eligendi inventore perferendis nemo
-					soluta accusantium animi sint perspiciatis magnam dolorum
-					rem aspernatur laudantium tenetur laborum quaerat, iste ab
-					praesentium.
+					Enthusiastic developer eager to contribute to team success
+					through hard work, attention to detail and excellent
+					organizational skills. Clear understanding of HTML and CSS
+					and training in React js. Motivated to learn, grow and
+					excel.
 				</p>
 				<div className="resume">
 					<h3>Resume</h3>
-					<a href={blacknwhite} download="Cody Powell's Resume">
-						<button>Black n' White</button>
-					</a>
-					<a href={color} download="Cody Powell's Resume">
-						<button>Color</button>
-					</a>
+					<div className="links">
+						<a href={color} download="Cody Powell's Resume">
+							<button>
+								<h4>For Creativity</h4>
+								<span>(Color)</span>
+							</button>
+						</a>
+						<a href={blacknwhite} download="Cody Powell's Resume">
+							<button>
+								<h4>For Print</h4>
+								<span>(B/W)</span>
+							</button>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

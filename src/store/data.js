@@ -13,6 +13,7 @@ import project11 from '../img/constellations/Constellations-12.png';
 import project12 from '../img/constellations/Constellations-13.png';
 import project13 from '../img/constellations/Constellations-14.png';
 import project14 from '../img/constellations/Constellations-15.png';
+import project15 from '../img/constellations/Constellations-16.png';
 
 import expert0 from '../img/skills/expertise/html.png';
 import expert1 from '../img/skills/expertise/css.png';
@@ -41,32 +42,39 @@ const data = {
 	projects: [
 		{
 			id: 'project-title-0',
-			title: 'Welcome'.toUpperCase(),
+			title: 'Hello there!'.toUpperCase(),
 			image: project11,
 			medium: 'React, 3.js, SCSS, HTML',
-			previewDescription: `This portfolio site is built on React, uses Three.js for the flying star animations,and a mix of CSS transforms and vanilla JS scrolling for the page transitions.`,
-			link: '',
-			gitLink: '',
+			previewDescription:
+				`This portfolio site is built on React, uses Three.js for the flying star animations,and a mix of CSS transforms and vanilla JS scrolling for the page transitions. For the best effect, view while listening to` +
+				(
+					<a href="https://www.youtube.com/watch?v=5qap5aO4i9A">
+						LoFi music
+					</a>
+				) +
+				`.`,
+			link: 'https://github.com/justanothergoonie/codys-portfolioo',
+			gitLink: 'https://github.com/justanothergoonie/codys-portfolioo',
 		},
 		{
 			id: 'project-title-13',
 			title: 'Johnny Trapeze'.toUpperCase(),
 			image: project12,
 			medium: 'HTML, SCSS',
-			previewDescription: `This responsive single page (what would this type of site be called) uses CSS only hamburger buttons.`,
-			description: `This responsive single page (what would this type of site be called) uses CSS only hamburger buttons.`,
-			link: 'https://www.gooniedev.com/southernSucculents/index.html',
-			gitLink: '',
+			previewDescription: `This responsive single page really well designed website uses CSS only hamburger buttons.`,
+			description: `This responsive single page really well designed website uses CSS only hamburger buttons.`,
+			link: 'https://www.gooniedev.com/johnnyTrapeze/index.html',
+			gitLink: 'https://github.com/justanothergoonie/johnnyTrapeze',
 		},
 		{
 			id: 'project-title-12',
 			title: 'Uni'.toUpperCase(),
 			image: project13,
 			medium: 'HTML, SCSS, JS',
-			previewDescription: `This responsive multi-page (what would this type of site be called), uses complex design elements and a JS driven hamburger button.`,
-			description: `This responsive multi-page (what would this type of site be called), uses complex design elements and a JS driven hamburger button.`,
+			previewDescription: `This responsive multi-page really well designed website, uses complex design elements and a JS driven hamburger button.`,
+			description: `This responsive multi-page really well designed website, uses complex design elements and a JS driven hamburger button.`,
 			link: 'https://www.gooniedev.com/southernSucculents/index.html',
-			gitLink: '',
+			gitLink: 'https://github.com/justanothergoonie/uni',
 		},
 		{
 			id: 'project-title-5',
@@ -76,7 +84,7 @@ const data = {
 			previewDescription: `This responsive e-commerce website has complex angled buttons built with CSS pseudo-classes, custom animated drop-down select elements, and full ARIA accessability.`,
 			description: `This responsive e-commerce website has complex angled buttons built with CSS pseudo-classes, custom animated drop-down select elements, and full ARIA accessability.`,
 			link: 'https://www.gooniedev.com/southernSucculents/index.html',
-			gitLink: '',
+			gitLink: 'https://github.com/justanothergoonie/southernSucculents',
 		},
 
 		{
@@ -87,7 +95,7 @@ const data = {
 			previewDescription: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
 			description: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
 			link: 'https://www.gooniedev.com/sparkySpark/index.html',
-			gitLink: '',
+			gitLink: 'https://github.com/justanothergoonie/saprkySpark',
 		},
 		{
 			id: 'project-title-3',
@@ -97,7 +105,8 @@ const data = {
 			previewDescription: `This responsive site has custom form field styling as well as functionality to prohibit access to those under a certain age, as well as full ARIA accessability. Design was created by consulting with the artist featured.`,
 			description: `This responsive site has custom form field styling as well as functionality to prohibit access to those under a certain age, as well as full ARIA accessability. Design was created by consulting with the artist featured.`,
 			link: 'https://www.gooniedev.com/nguyenTattoos/index.html',
-			gitLink: '',
+			gitLink:
+				'https://github.com/justanothergoonie/webDev4Week1Homework',
 		},
 		{
 			id: 'project-title-4',
@@ -107,7 +116,7 @@ const data = {
 			previewDescription: `This helper app for Pokemon Go! players uses the Google Maps API and a public Pokedex API to plot likely real world locations for finding in-game pokemon. It uses Axios for AJAX and Bootstrap for styling.`,
 			description: `This helper app for Pokemon Go! players uses the Google Maps API and a public Pokedex API to plot likely real world locations for finding in-game pokemon. It uses Axios for AJAX and Bootstrap for styling.`,
 			link: 'https://www.gooniedev.com/pokemonFinder/index.html',
-			gitLink: '',
+			gitLink: 'https://github.com/justanothergoonie/ajaxFinal',
 		},
 		{
 			id: 'project-title-1',
@@ -117,39 +126,38 @@ const data = {
 			previewDescription: `This web app will tell anyone about anything Studio Ghibli related using VUE to create the app and a Ghibli API to provide the data needed, the Giphy API is also used to add some flavor.`,
 			description: `This web app will tell anyone about anything Studio Ghibli related using VUE to create the app and a Ghibli API to provide the data needed, the Giphy API is also used to add some flavor.`,
 			link: '',
-			gitLink: '',
+			gitLink: 'https://github.com/justanothergoonie/vue-vinal',
 		},
 		{
 			id: 'project-title-7',
 			title: 'Mafia Experience'.toUpperCase(),
 			image: project6,
 			medium: 'Vanilla JS, GSAP, SVG Animations',
-			previewDescription: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG, Greensock animation platform, and vanilla JS. 
-			Special thanks to designers Maddie Sherlock and Nick Callender.`,
+			previewDescription: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG, Greensock animation platform, and vanilla JS.`,
 			description: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG, Greensock animation platform, and vanilla JS. 
 			Special thanks to designers Maddie Sherlock and Nick Callender.`,
 			link: 'https://www.gooniedev.com/mafiaProject/index.html',
-			gitLink: '',
+			gitLink: 'https://github.com/justanothergoonie/mafiaProject',
 		},
 		{
 			id: 'project-title-6',
 			title: 'Mind Brain'.toUpperCase(),
 			image: project5,
 			medium: 'HTML, SCSS, GSAP, PHP',
-			previewDescription: `This web app was created with the purpose of being a huge mind map that starts with one word and spreads throughout the 10,000x10,000 plane and gets more and more chaotic as it goes. Using php it gets its data from a server so it can be displayed on any screen and you can add words from your phone and see them added to the screen in real time. GSAP is used to see the stylings you apply in real time on your phone. Special thanks to designers Maddie Sherlock and Nick Callender.`,
-			description: `This web app was created with the purpose of being a huge mind map that starts with one word and spreads throughout the 10,000x10,000 plane and gets more and more chaotic as it goes. Using php it gets its data from a server so it can be displayed on any screen and you can add words from your phone and see them added to the screen in real time. GSAP is used to see the stylings you apply in real time on your phone. Special thanks to designers Maddie Sherlock and Nick Callender.`,
-			link: '',
-			gitLink: '',
+			previewDescription: `This web app was created with the purpose of being a huge mind map that starts with one word and spreads throughout the 100,000,000px plane and gets more and more chaotic as it goes.`,
+			description: `This web app was created with the purpose of being a huge mind map that starts with one word and spreads throughout the 100,000,000px plane and gets more and more chaotic as it goes. Using php it gets its data from a server so it can be displayed on any screen and you can add words from your phone and see them added to the screen in real time. GSAP is used to see the stylings you apply in real time on your phone. Special thanks to designers Maddie Sherlock and Nick Callender.`,
+			link: 'http://circuslabs.net/~cody.powell/circus/portfolioPieces/mindbrain/?x=612&y=444.5',
+			gitLink: 'https://github.com/justanothergoonie/mind_map',
 		},
 		{
 			id: 'project-title-11',
 			title: 'Node Messaging'.toUpperCase(),
 			image: project14,
 			medium: 'Node.js, SOCKET.io, Bootstrap, GULP',
-			previewDescription: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms. It was made using Node.js to create a local server and SOCKET.io to link two or more people to talk using GIFs brought in with the giphy API and then combined with a dictionary API to pull synonyms of the words from your message.`,
+			previewDescription: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms.`,
 			description: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms. It was made using Node.js to create a local server and SOCKET.io to link two or more people to talk using GIFs brought in with the giphy API and then combined with a dictionary API to pull synonyms of the words from your message.`,
 			link: '',
-			gitLink: '',
+			gitLink: 'https://github.com/justanothergoonie/nodeGifMessages',
 		},
 		{
 			id: 'project-title-10',
@@ -161,46 +169,16 @@ const data = {
 			link: '',
 			gitLink: '',
 		},
-		// {
-		// 	id: 'project-title-2',
-		// 	title: 'Our Solar System'.toUpperCase(),
-		// 	image: project1,
-		// 	previewDescription: `Lorem ipsum dolor sit amet consectetur
-		//     adipisicing elit. Corporis similique officiis
-		//     quidem id ad architecto totam eius hic.`,
-		// 	description: `Lorem ipsum dolor sit amet consectetur
-		//         adipisicing elit. Corporis similique officiis
-		//         quidem id ad architecto totam eius hic dicta
-		//         consequatur fugiat, odit praesentium, quibusdam
-		//         veritatis debitis excepturi provident eos
-		//         temporibus?`,
-		// 	link: 'https://www.gooniedev.com/keyFrameSolarSystem/index.html',
-		// },
-
-		// {
-		// 	id: 'project-title-8',
-		// 	title: 'Spotify Stats Redesign'.toUpperCase(),
-		// 	image: project7,
-		// 	previewDescription: `Lorem ipsum dolor sit amet consectetur
-		//     adipisicing elit. Corporis similique officiis
-		//     quidem id ad architecto totam eius hic.`,
-		// 	description: `Lorem ipsum dolor sit amet consectetur
-		//         adipisicing elit. Corporis similique officiis
-		//         quidem id ad architecto totam eius hic dicta
-		//         consequatur fugiat, odit praesentium, quibusdam
-		//         veritatis debitis excepturi provident eos
-		//         temporibus?`,
-		// 	link: '',
-		// },
-		// {
-		// 	id: 'project-title-9',
-		// 	title: 'Third Wave Energy'.toUpperCase(),
-		// 	image: project8,
-		// 	medium: 'HTML, SCSS, JS, GSAP, SVG Animations',
-		// 	previewDescription: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
-		// 	description: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
-		// 	link: 'https://www.gooniedev.com/sparkySpark/index.html',
-		// },
+		{
+			id: 'project-title-15',
+			title: 'VR Music Visualizer'.toUpperCase(),
+			image: project15,
+			medium: 'Unity, C#, bolt',
+			previewDescription: `This virtual reality experience brings the classic Windows Music Player to life all around you. Using the Unity engine, an Oculus Go 2, and any music files from remix packs found online the songs are brought to life allowing you to see and feel them.`,
+			description: `This virtual reality experience brings the classic Windows Music Player to life all around you. Using the Unity engine, an Oculus Go 2, and any music files from remix packs found online the songs are brought to life allowing you to see and feel them.`,
+			link: '',
+			gitLink: '',
+		},
 	],
 	expertise: [
 		{
