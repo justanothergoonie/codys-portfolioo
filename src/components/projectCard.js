@@ -1,6 +1,7 @@
 import { useHistory } from 'react-router-dom';
 
 const ProjectCard = ({
+	id,
 	image,
 	title,
 	previewDescription,
@@ -9,12 +10,13 @@ const ProjectCard = ({
 	display,
 	showModal,
 	medium,
+	gitLink,
 }) => {
 	const history = useHistory();
 	const projectClass = flipped ? 'project project--flipped' : 'project';
 
 	return (
-		<div className={projectClass}>
+		<div className={projectClass} id={id}>
 			<div className="constellation-definer">
 				{display ? (
 					<img src={image} alt={title} onClick={showModal} />
@@ -25,8 +27,10 @@ const ProjectCard = ({
 			<h2 className="mobile-title">{title}</h2>
 			<div className="project-info">
 				<h2 className="desktop-title">{title}</h2>
-				<p>{previewDescription}</p>
+				<p dangerouslySetInnerHTML={{ __html: previewDescription }} />
+
 				<span>Technology used: {medium}</span>
+
 				<button
 					onClick={() => {
 						// this is some hacky nonsense
@@ -41,6 +45,15 @@ const ProjectCard = ({
 				>
 					VIEW
 				</button>
+
+				<a
+					href={gitLink}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="git"
+				>
+					VIEW REPO
+				</a>
 			</div>
 		</div>
 	);

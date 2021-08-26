@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useWindowSize } from '../utilities/hooks';
 import { iconChecker } from '../utilities/iconChecker';
+
 import Head from '../components/header';
 import ProjectCard from '../components/projectCard';
 import ProjectModal from '../components/projectModal';
@@ -8,10 +9,12 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import trees from '../img/trees.png';
 import Contact from '../components/footer';
+import Load from '../components/loader';
 
 import { Context } from '../store/store';
 
 export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
+	iconChecker();
 	const [state, dispatch] = useContext(Context);
 
 	const size = useWindowSize();
@@ -25,7 +28,7 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 		dispatch({ type: 'TOGGLE_MODAL_SHOW', payload: state.show });
 	};
 	// console.log(size, displayModal);
-	iconChecker();
+
 	return (
 		<div className="wrap">
 			{displayModal ? (
@@ -36,10 +39,17 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 			) : null}
 
 			<Head />
+			<a href="#project-title-6"></a>
 			<div className="all-projects" id="work" ref={workRef}>
 				{state.projects.map((project, index) => {
-					const { image, previewDescription, id, title, medium } =
-						project;
+					const {
+						image,
+						previewDescription,
+						id,
+						title,
+						medium,
+						gitLink,
+					} = project;
 					const flipped = index % 2 === 0;
 
 					return (
@@ -54,6 +64,7 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 							previewDescription={previewDescription}
 							link={`/projects/${id}`}
 							flipped={flipped}
+							gitLink={gitLink}
 						/>
 					);
 				})}
@@ -66,13 +77,15 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 					<h2>EXPERTISE</h2>
 					<div className="skills__expertise">
 						{state.expertise.map((skill, index) => {
-							const { image, title, id } = skill;
+							const { image, title, id, alt, link } = skill;
 							return (
 								<Skills
 									key={index}
 									image={image}
 									title={title}
 									id={id}
+									alt={alt}
+									link={link}
 								/>
 							);
 						})}
@@ -83,13 +96,15 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 					<h2>EXPERIENCE</h2>
 					<div className="skills__experience">
 						{state.experience.map((skill, index) => {
-							const { image, title, id } = skill;
+							const { image, title, id, alt, link } = skill;
 							return (
 								<Skills
 									key={index}
 									image={image}
 									title={title}
 									id={id}
+									alt={alt}
+									link={link}
 								/>
 							);
 						})}

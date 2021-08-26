@@ -532,24 +532,6 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	// :nth-child(1) {
-	// 	display: none;
-	// }
-	// &:first-child {
-	// 	// color: red;
-	// 	// flex-direction: row;
-	// 	.constellation-definer {
-	// 		width: 50%;
-	// 		display: flex;
-	// 		justify-content: flex-end;
-	// 	}
-	// 	.project-info {
-	// 		width: 50%;
-	// 		margin-right: unset;
-	// 		margin-left: unset;
-	// 		align-items: flex-start;
-	// 	}
-	// }
 	.project {
 		display: flex;
 		flex-direction: column;
@@ -579,8 +561,9 @@
 
 		.constellation-definer {
 			display: flex;
-			opacity: 1;
-			// animation: constellationInOut 3s linear infinite;
+			// opacity: 1;
+			align-items: center;
+
 			cursor: pointer;
 			@include bp-med {
 				animation: unset;
@@ -596,6 +579,7 @@
 		.project-info {
 			display: none;
 			@include bp-med {
+				max-width: 50%;
 				display: flex;
 				flex-direction: column;
 				align-content: flex-end;
@@ -604,79 +588,124 @@
 				margin-left: 4rem;
 				h2 {
 					font-size: 2.5rem;
+					margin-bottom: 1rem;
 					text-align: left;
 				}
 				p {
-					line-height: 1.5rem;
+					line-height: 1.7rem;
 					font-size: 1.1rem;
-					// width: 70%;
 					text-align: left;
+					a {
+						color: #71d9f4;
+					}
+				}
+				span {
+					// the technology used bit
+					font-style: italic;
+					text-align: left;
+					margin-top: 1rem;
+					margin-bottom: 2rem;
+				}
+				a {
+					display: none;
+					button {
+						display: none;
+					}
 				}
 			}
 		}
 		&.project--flipped {
-			flex-direction: column;
 			@include bp-med {
 				flex-direction: row-reverse;
-			}
-			.constellation-definer {
-				display: flex;
-				img {
-					@include bp-med {
-						transform: scale(1.25);
-					}
-				}
 			}
 			.project-info {
 				display: none;
 				@include bp-med {
+					// max-width: 50%;
 					display: flex;
-					flex-direction: column;
-					// align-content: flex-end;
+					// flex-direction: column;
+
 					align-items: flex-end;
-					justify-content: space-evenly;
+					// justify-content: space-evenly;
 					margin-right: 4rem;
 					h2 {
-						font-size: 2.5rem;
 						text-align: right;
 					}
 					p {
-						line-height: 1.5rem;
-						font-size: 1.1rem;
-						// width: 70%;
+						text-align: right;
+					}
+					span {
 						text-align: right;
 					}
 				}
 			}
 		}
 		&:first-child {
-			// color: red;
 			flex-direction: column;
 			@include bp-med {
 				flex-direction: row;
+				justify-content: center;
+				margin: 8rem 2rem 1rem 2rem;
 			}
 
 			.constellation-definer {
 				width: unset;
 				@include bp-med {
-					width: 50%;
+					// width: 50%;
 					display: flex;
-					justify-content: flex-end;
+					// justify-content: flex-end;
 					margin-right: 2rem;
 				}
 			}
 			.project-info {
+				max-width: unset;
 				width: 50%;
 				margin-right: unset;
 				margin-left: unset;
 				align-items: flex-start;
 				margin-left: 2rem;
+
 				p {
 					text-align: left;
 				}
+				.lofi {
+					display: inline;
+				}
+
+				.git {
+					display: flex;
+					position: relative;
+					font-family: 'Titillium Web', sans-serif;
+					font-weight: 600;
+					color: white;
+					font-size: 1.2rem;
+					background-color: #71d9f4;
+					border: none;
+					width: 166px;
+					height: 55px;
+					align-items: center;
+					justify-content: center;
+					// -webkit-box-shadow: 0px 0px 10px 3px #71d9f4;
+					// box-shadow: 0px 0px 10px 3px #71d9f4;
+					cursor: pointer;
+				}
+				.git::after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					-webkit-box-shadow: 0px 0px 10px 3px #71d9f4;
+					box-shadow: 0px 0px 10px 3px #71d9f4;
+					@include bp-med {
+						opacity: 0;
+						animation: buttonInOut 2s linear infinite;
+					}
+				}
+
 				button {
 					display: none;
-					// inner
 				}
 			}
 		}
@@ -695,7 +724,7 @@
 	}
 }
 .project-modal {
-	background-color: rgba(#000, 0.65);
+	background-color: rgba(#000, 0.75);
 	left: 50%;
 	min-width: 350px;
 	// height: 81%;
@@ -752,6 +781,10 @@
 				height: 10rem;
 				margin: 1rem 0;
 				line-height: 2rem;
+				resize: none;
+			}
+			span {
+				font-style: italic;
 			}
 			button {
 				margin: 1rem 0;
@@ -986,21 +1019,23 @@ footer {
 			flex-direction: column;
 			@include bp-med {
 				flex-direction: row;
-				margin: 5rem 0;
+				margin: 5rem auto;
+				width: 70%;
 			}
 			img {
 				width: 100%;
 				@include bp-med {
-					width: 55%;
+					// width: 55%;
 				}
 			}
 			aside {
 				margin: 0 1rem;
 				@include bp-med {
 					display: flex;
-					width: 45%;
+					// width: 45%;
 					flex-direction: column;
 					justify-content: center;
+					min-width: 50%;
 				}
 				.project-page__project__description {
 					line-height: 1.5rem;

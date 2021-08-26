@@ -1,7 +1,9 @@
-const Skills = ({ id, title, alt, image }) => {
+const Skills = ({ id, title, alt, image, link }) => {
 	return (
 		<div className="skills__definer">
-			<img src={image} alt={alt} className="skill" />
+			<a href={link} target="_blank" rel="noopener noreferrer">
+				<img src={image} className="skill" />
+			</a>
 		</div>
 	);
 };

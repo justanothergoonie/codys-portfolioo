@@ -47,7 +47,7 @@ const ProjectModal = ({ show, hideModal }) => {
 				<div className="project-info-modal">
 					<textarea value={project.previewDescription}></textarea>
 					{/* <p>{project.previewDescription}</p> */}
-					<span>{project.medium}</span>
+					<span>Technology used: {project.medium}</span>
 					<button
 						onClick={() => {
 							document.querySelector(

@@ -3,7 +3,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 import back from '../img/back-btn.png';
 import { Context } from '../store/store';
 
-const ProjectPage = ({ title, image, description, link, gitLink }) => {
+const ProjectPage = ({ title, image, description, link, gitLink, id }) => {
 	const history = useHistory();
 	const location = useLocation();
 	const [state, dispatch] = useContext(Context);
@@ -17,11 +17,14 @@ const ProjectPage = ({ title, image, description, link, gitLink }) => {
 			nav.classList.remove('hidden');
 		}
 	}, [location]);
-
+	const handleSubmit = (e) => {
+		// history.push(`/#${id}`);
+		history.goBack();
+	};
 	return (
 		<div className="project-page">
 			<div className="project-page__bak-btn">
-				<img src={back} alt="Back" onClick={() => history.push('/')} />
+				<img src={back} alt="Back" onClick={handleSubmit} />
 			</div>
 
 			<div className="project-page__project">
@@ -37,10 +40,7 @@ const ProjectPage = ({ title, image, description, link, gitLink }) => {
 							className="project-page__project__description"
 							dangerouslySetInnerHTML={{ __html: description }}
 						></div>
-						{/* <div
-							className="project-page__project__description"
-							dangerouslySetInnerHTML={{ __html: description }}
-						></div> */}
+
 						<div className="links">
 							<a
 								href={link}

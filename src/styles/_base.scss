@@ -42,6 +42,41 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 }
+.loader {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: cornflowerblue;
+	opacity: 1;
+	// z-index: 999;
+	animation: load 3s 1s ease-out 1;
+	@keyframes load {
+		0% {
+			opacity: 1;
+			// z-index: 999;
+		}
+		25% {
+			opacity: 0.75;
+		}
+		50% {
+			opacity: 0.5;
+		}
+		75% {
+			opacity: 0.25;
+		}
+		100% {
+			opacity: 0;
+			// z-index: -999;
+			display: none;
+		}
+	}
+}
 a,
 li {
 	text-decoration: none;
