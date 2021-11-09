@@ -1,5 +1,5 @@
 import React, { useEffect, useContext, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { Context } from '../store/store';
 
 import ProjectPage from '../components/projectPage';
@@ -7,7 +7,9 @@ import ProjectPage from '../components/projectPage';
 export default function Project() {
 	const [mounted, setMounted] = useState(false);
 	const [project, setProject] = useState(null);
+	const location = useLocation();
 	const [state] = useContext(Context);
+
 	let params = useParams();
 	var scrollToTop = () => {
 		window.scrollTo(0, 0);
@@ -33,6 +35,7 @@ export default function Project() {
 					link={project.link}
 					gitLink={project.gitLink}
 					id={project.id}
+					video={project.video}
 				/>
 			) : (
 				<h1>Loading...</h1>

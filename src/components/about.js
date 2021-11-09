@@ -1,11 +1,10 @@
-import color from '../img/resumes/colorResume.jpg';
-import blacknwhite from '../img/resumes/bnwResume.jpg';
+import me from '../img/me/me.jpg';
 
-const About = ({ reference }) => {
+const About = ({ reference, image }) => {
 	return (
 		<div className="about" id="about" ref={reference}>
 			<div className="about__pic">
-				<img src="" alt="me" className="me" />
+				<img src={me} alt="me" className="me" />
 			</div>
 			<div className="about__info">
 				<h2>ABOUT ME</h2>
@@ -17,15 +16,21 @@ const About = ({ reference }) => {
 					excel.
 				</p>
 				<div className="resume">
-					<h3>Resume</h3>
+					<h3>Resumé</h3>
 					<div className="links">
-						<a href={color} download="Cody Powell's Resume">
+						<a
+							href="https://gooniedev.com/colorResume.pdf"
+							download="Cody Powell's Resume"
+						>
 							<button>
 								<h4>For Creativity</h4>
 								<span>(Color)</span>
 							</button>
 						</a>
-						<a href={blacknwhite} download="Cody Powell's Resume">
+						<a
+							href="https://gooniedev.com/bnwResume.pdf"
+							download="Cody Powell's Resume"
+						>
 							<button>
 								<h4>For Print</h4>
 								<span>(B/W)</span>

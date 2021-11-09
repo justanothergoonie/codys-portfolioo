@@ -8577,10 +8577,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-pdfjs-dist@2.6.347:
-  version "2.6.347"
-  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.6.347.tgz#f257ed66e83be900cd0fd28524a2187fb9e25cd5"
-  integrity sha512-QC+h7hG2su9v/nU1wEI3SnpPIrqJODL7GTDFvR74ANKGq1AFJW16PH8VWnhpiTi9YcLSFV9xLeWSgq+ckHLdVQ==
+pdfjs-dist@2.9.359:
+  version "2.9.359"
+  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.9.359.tgz#e67bafebf20e50fc41f1a5c189155ad008ac4f81"
+  integrity sha512-P2nYtkacdlZaNNwrBLw1ZyMm0oE2yY/5S/GDCAmMJ7U4+ciL/D0mrlEC/o4HZZc/LNE3w8lEVzBEyVgEQlPVKQ==
 
 performance-now@^2.1.0:
   version "2.1.0"
@@ -9663,10 +9663,10 @@ react-loader-spinner@^4.0.0:
   dependencies:
     prop-types "^15.7.2"
 
-react-pdf@^5.3.2:
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/react-pdf/-/react-pdf-5.3.2.tgz#517109d2a32ea7450dea49f7e5cc8e10bd2cfc4b"
-  integrity sha512-gT2xeUAUJem5UWNZYIQSPJAlPDbc3mIIhEgGK8P/qo1B68WIE4R4v3tNFYM9e5nqlKnGZG4Cd68SetlmnPejwA==
+react-pdf@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/react-pdf/-/react-pdf-5.4.0.tgz#57083f43f53d44ce4218e4431b5812dcce8526dd"
+  integrity sha512-wO+RESP4t9Dwq10ORiE1XSPohnsU/WYTgHf80mDhRxPqwzN2HrbBg1NUZRBqbxkd8ZM3HhBR47apYL4xmweMPg==
   dependencies:
     "@babel/runtime" "^7.0.0"
     file-loader "^6.0.0"
@@ -9674,7 +9674,7 @@ react-pdf@^5.3.2:
     make-event-props "^1.1.0"
     merge-class-names "^1.1.1"
     merge-refs "^1.0.0"
-    pdfjs-dist "2.6.347"
+    pdfjs-dist "2.9.359"
     prop-types "^15.6.2"
 
 react-refresh@^0.8.3:

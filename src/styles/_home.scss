@@ -539,7 +539,7 @@
 		text-align: center;
 
 		@include bp-med {
-			flex-direction: row;
+			flex-direction: row-reverse;
 			text-align: unset;
 			margin: 8rem 2rem;
 		}
@@ -585,11 +585,11 @@
 				align-content: flex-end;
 				align-items: flex-start;
 				justify-content: space-evenly;
-				margin-left: 4rem;
+				margin-right: 4rem;
 				h2 {
 					font-size: 2.5rem;
 					margin-bottom: 1rem;
-					text-align: left;
+					text-align: right;
 				}
 				p {
 					line-height: 1.7rem;
@@ -602,9 +602,10 @@
 				span {
 					// the technology used bit
 					font-style: italic;
-					text-align: left;
+					// text-align: right;
 					margin-top: 1rem;
 					margin-bottom: 2rem;
+					line-height: 1.5rem;
 				}
 				a {
 					display: none;
@@ -616,18 +617,14 @@
 		}
 		&.project--flipped {
 			@include bp-med {
-				flex-direction: row-reverse;
+				flex-direction: row;
 			}
 			.project-info {
 				display: none;
 				@include bp-med {
-					// max-width: 50%;
 					display: flex;
-					// flex-direction: column;
-
 					align-items: flex-end;
-					// justify-content: space-evenly;
-					margin-right: 4rem;
+					margin-left: 4rem;
 					h2 {
 						text-align: right;
 					}
@@ -805,6 +802,9 @@
 			width: 30%;
 			justify-content: center;
 			align-items: center;
+			img {
+				width: 100%;
+			}
 		}
 	}
 	.about__info {
@@ -855,7 +855,7 @@
 					align-content: center;
 
 					@include bp-med {
-						width: 50%;
+						width: 10rem;
 						justify-content: center;
 					}
 					button {
@@ -865,7 +865,7 @@
 						justify-content: center;
 						width: 100%;
 						@include bp-med {
-							width: 50%;
+							// width: 50%;
 						}
 						span {
 							font-size: 0.8rem;

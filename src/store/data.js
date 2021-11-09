@@ -1,14 +1,14 @@
 import project0 from '../img/constellations/Constellations-01.png';
-import project1 from '../img/constellations/Constellations-02.png';
+// import project1 from '../img/constellations/Constellations-02.png';
 import project2 from '../img/constellations/Constellations-03.png';
 import project3 from '../img/constellations/Constellations-04.png';
 import project4 from '../img/constellations/Constellations-05.png';
 import project5 from '../img/constellations/Constellations-06.png';
 import project6 from '../img/constellations/Constellations-07.png';
-import project7 from '../img/constellations/Constellations-08.png';
+// import project7 from '../img/constellations/Constellations-08.png';
 import project8 from '../img/constellations/Constellations-09.png';
 import project9 from '../img/constellations/Constellations-10.png';
-import project10 from '../img/constellations/Constellations-11.png';
+// import project10 from '../img/constellations/Constellations-11.png';
 import project11 from '../img/constellations/Constellations-12.png';
 import project12 from '../img/constellations/Constellations-13.png';
 import project13 from '../img/constellations/Constellations-14.png';
@@ -33,6 +33,8 @@ import contact0 from '../img/contact/email.png';
 import contact1 from '../img/contact/insta.png';
 import contact2 from '../img/contact/git.png';
 import contact3 from '../img/contact/linkedin.png';
+
+// import me from '../img/me/me.jpeg';
 
 const data = {
 	activeProjectId: null,
@@ -147,10 +149,10 @@ const data = {
 			id: 'project-title-11',
 			title: 'Node Messaging'.toUpperCase(),
 			image: project14,
-			medium: 'Node.js, Socket.io, Bootstrap, Gulp',
+			medium: 'Node.js, Socket.io, Bootstrap, Gulp, Heroku',
 			previewDescription: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms.`,
-			description: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms. It was made using Node.js to create a local server and Socket.io to link two or more people to talk using GIFs brought in with the giphy API and then combined with a dictionary API to pull synonyms of the words from your message.`,
-			link: '',
+			description: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms. It was made using Node.js to create a local server and Socket.io to link two or more people to talk using GIFs brought in with the giphy API and then combined with a dictionary API to pull synonyms of the words from your message. Open the site on more then one device in order to get the full effect and play with the app, see who can stump who the most.`,
+			link: 'https://giphymessags.herokuapp.com/',
 			gitLink: 'https://github.com/justanothergoonie/nodeGifMessages',
 		},
 		{
@@ -170,8 +172,9 @@ const data = {
 			medium: 'Unity, C#, Bolt',
 			previewDescription: `This virtual reality experience brings the classic Windows Music Player to life all around you. Using the Unity engine, an Oculus Go 2, and any music files from remix packs found online the songs are brought to life allowing you to see and feel them.`,
 			description: `This virtual reality experience brings the classic Windows Music Player to life all around you. Using the Unity engine, an Oculus Go 2, and any music files from remix packs found online the songs are brought to life allowing you to see and feel them.`,
-			link: '',
-			gitLink: '',
+			link: 'https://www.youtube.com/watch?v=sHjcJsvjgaw',
+			gitLink: 'https://www.youtube.com/watch?v=sHjcJsvjgaw',
+			video: `<iframe width="420" height="345" src='https://www.youtube.com/embed/sHjcJsvjgaw'></iframe>`,
 		},
 	],
 	expertise: [
@@ -224,15 +227,15 @@ const data = {
 			link: 'https://developer.mozilla.org/en-US/docs/Glossary/SQL',
 			image: expert6,
 		},
-	],
-	experience: [
 		{
-			id: 'experience0',
+			id: 'expert7',
 			title: 'React',
 			alt: 'React',
 			link: 'https://reactjs.org/docs/getting-started.html',
 			image: experience0,
 		},
+	],
+	experience: [
 		{
 			id: 'experience1',
 			title: 'Vue',

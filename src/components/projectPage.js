@@ -1,20 +1,42 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useRef } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import back from '../img/back-btn.png';
 import { Context } from '../store/store';
 
-const ProjectPage = ({ title, image, description, link, gitLink, id }) => {
+const ProjectPage = ({
+	title,
+	image,
+	description,
+	link,
+	gitLink,
+	id,
+	video,
+}) => {
 	const history = useHistory();
 	const location = useLocation();
+	const ref = useRef();
 	const [state, dispatch] = useContext(Context);
 
 	const nav = document.querySelector('.menu');
+	const img = ref.current;
 
 	useEffect(() => {
 		if (location.pathname !== '/') {
 			nav.classList.add('hidden');
+			console.log(nav);
 		} else {
 			nav.classList.remove('hidden');
+			console.log(nav);
+		}
+	}, [location]);
+	useEffect(() => {
+		if (location.pathname === '/projects/project-title-15') {
+			console.log(img);
+			console.log(ref.current);
+			ref.current.classList.add('hidden');
+		} else {
+			console.log(img);
+			console.log('hey it the vr project');
 		}
 	}, [location]);
 	const handleSubmit = (e) => {
@@ -59,7 +81,8 @@ const ProjectPage = ({ title, image, description, link, gitLink, id }) => {
 						</div>
 					</aside>
 				</div>
-				<div className="project-page__project__pics">
+				<div dangerouslySetInnerHTML={{ __html: video }} />
+				<div className="project-page__project__pics" ref={ref}>
 					<div className="project-page__project__pics-pic">
 						<img src="" alt="" />
 					</div>
