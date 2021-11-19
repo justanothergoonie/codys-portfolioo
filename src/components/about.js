@@ -9,11 +9,20 @@ const About = ({ reference, image }) => {
 			<div className="about__info">
 				<h2>ABOUT ME</h2>
 				<p>
-					Enthusiastic developer eager to contribute to team success
+					What does space, cooking, anime, and an endless supply of
+					memes have in common? Probably a lot of things. But also me,
+					Cody. As a developer, I spend a lot of my time in front of a
+					screen. So whenever I get a chance to escape, I spend it
+					outdoors hiking or camping. However, if it’s nice and dreary
+					out, then a good JRPG or D&amp;D session will do.
+				</p>
+				<br></br>
+				<p>
+					I'm an Enthusiastic and eager to contribute to team success
 					through hard work, attention to detail and excellent
-					organizational skills. Clear understanding of HTML and CSS
-					and training in React js. Motivated to learn, grow and
-					excel.
+					organizational skills. I have clear understanding of HTML,
+					responsive CSS, vanilla JS, and training in React js; I'm
+					always excited to learn, grow and excel.
 				</p>
 				<div className="resume">
 					<h3>Resumé</h3>

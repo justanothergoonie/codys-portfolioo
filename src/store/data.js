@@ -1,4 +1,4 @@
-import project0 from '../img/constellations/Constellations-01.png';
+import project0 from '../img/constellations/Constellations-17.png';
 // import project1 from '../img/constellations/Constellations-02.png';
 import project2 from '../img/constellations/Constellations-03.png';
 import project3 from '../img/constellations/Constellations-04.png';
@@ -91,16 +91,16 @@ const data = {
 			link: 'https://www.gooniedev.com/southernSucculents/index.html',
 			gitLink: 'https://github.com/justanothergoonie/southernSucculents',
 		},
-		{
-			id: 'project-title-1',
-			title: 'Ghiblipedia'.toUpperCase(),
-			image: project0,
-			medium: 'Vue, JS, CSS, HTML',
-			previewDescription: `This web app will tell anyone about anything Studio Ghibli related using Vue to create the app and a Ghibli API to provide the data needed, the Giphy API is also used to add some flavor.`,
-			description: `This web app will tell anyone about anything Studio Ghibli related using Vue to create the app and a Ghibli API to provide the data needed, the Giphy API is also used to add some flavor.`,
-			link: '',
-			gitLink: 'https://github.com/justanothergoonie/vue-vinal',
-		},
+		// {
+		// 	id: 'project-title-1',
+		// 	title: 'Tweet'.toUpperCase(),
+		// 	image: project0,
+		// 	medium: 'Vue, JS, CSS, HTML',
+		// 	previewDescription: `This web app will tell anyone about anything Studio Ghibli related using Vue to create the app and a Ghibli API to provide the data needed, the Giphy API is also used to add some flavor.`,
+		// 	description: `This web app will tell anyone about anything Studio Ghibli related using Vue to create the app and a Ghibli API to provide the data needed, the Giphy API is also used to add some flavor.`,
+		// 	link: '',
+		// 	gitLink: 'https://github.com/justanothergoonie/vue-vinal',
+		// },
 		{
 			id: 'project-title-9',
 			title: 'Third Wave Energy'.toUpperCase(),
@@ -155,16 +155,16 @@ const data = {
 			link: 'https://giphymessags.herokuapp.com/',
 			gitLink: 'https://github.com/justanothergoonie/nodeGifMessages',
 		},
-		{
-			id: 'project-title-10',
-			title: 'Ping-Pong Clock'.toUpperCase(),
-			image: project9,
-			medium: 'Arduino Uno, RTC(Real Time Clock), C++',
-			previewDescription: `This physical real life clock was made with 180 LED lights and Ping Pong Balls, a RTC, and an Arduino Uno to run the code that makes it work. It required extensive planning and problem solving throughout its creation. `,
-			description: `This physical real life clock was made with 180 LED lights and Ping Pong Balls, a RTC, and an Arduino Uno to run the code that makes it work. It required extensive planning and problem solving throughout its creation. `,
-			link: '',
-			gitLink: '',
-		},
+		// {
+		// 	id: 'project-title-10',
+		// 	title: 'Ping-Pong Clock'.toUpperCase(),
+		// 	image: project9,
+		// 	medium: 'Arduino Uno, RTC(Real Time Clock), C++',
+		// 	previewDescription: `This physical real life clock was made with 180 LED lights and Ping Pong Balls, a RTC, and an Arduino Uno to run the code that makes it work. It required extensive planning and problem solving throughout its creation. `,
+		// 	description: `This physical real life clock was made with 180 LED lights and Ping Pong Balls, a RTC, and an Arduino Uno to run the code that makes it work. It required extensive planning and problem solving throughout its creation. `,
+		// 	link: '',
+		// 	gitLink: '',
+		// },
 		{
 			id: 'project-title-15',
 			title: 'VR Music Visualizer'.toUpperCase(),

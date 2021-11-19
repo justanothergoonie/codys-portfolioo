@@ -33,7 +33,7 @@ const ProjectPage = ({
 		if (location.pathname === '/projects/project-title-15') {
 			console.log(img);
 			console.log(ref.current);
-			ref.current.classList.add('hidden');
+			// ref.current.classList.add('hidden');
 		} else {
 			console.log(img);
 			console.log('hey it the vr project');
@@ -81,15 +81,18 @@ const ProjectPage = ({
 						</div>
 					</aside>
 				</div>
-				<div dangerouslySetInnerHTML={{ __html: video }} />
-				<div className="project-page__project__pics" ref={ref}>
+				<div
+					dangerouslySetInnerHTML={{ __html: video }}
+					className="vid"
+				/>
+				{/* <div className="project-page__project__pics" ref={ref}>
 					<div className="project-page__project__pics-pic">
 						<img src="" alt="" />
 					</div>
 					<div className="project-page__project__pics-pic">
 						<img src="" alt="" />
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

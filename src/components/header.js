@@ -323,7 +323,7 @@ const Header = () => {
 			</div>
 			<div className="head__info">
 				<h1>CODY POWELL</h1>
-				<span>Full Stack Developer</span>
+				<span>Full Stack Creative Technologist</span>
 			</div>
 		</div>
 	);
