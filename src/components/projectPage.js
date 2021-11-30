@@ -85,14 +85,14 @@ const ProjectPage = ({
 					dangerouslySetInnerHTML={{ __html: video }}
 					className="vid"
 				/>
-				{/* <div className="project-page__project__pics" ref={ref}>
+				<div className="project-page__project__pics" ref={ref}>
 					<div className="project-page__project__pics-pic">
 						<img src="" alt="" />
 					</div>
 					<div className="project-page__project__pics-pic">
 						<img src="" alt="" />
 					</div>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);
