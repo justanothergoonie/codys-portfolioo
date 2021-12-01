@@ -138,8 +138,8 @@ const data = {
 			title: 'Mafia Experience'.toUpperCase(),
 			image: project6,
 			medium: 'Vanilla JS, GSAP, SVG Animations',
-			previewDescription: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG, Greensock animation platform, and vanilla JS.`,
-			description: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG, Greensock animation platform, and vanilla JS. 
+			previewDescription: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG,The Greensock animation platform, and vanilla JS.`,
+			description: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG,The Greensock animation platform, and vanilla JS. 
 			Special thanks to designers Maddie Sherlock and Nick Callender.`,
 			link: 'https://www.gooniedev.com/mafiaProject/index.html',
 			gitLink: 'https://github.com/justanothergoonie/mafiaProject',
