@@ -36,6 +36,12 @@ export default function Project() {
 					gitLink={project.gitLink}
 					id={project.id}
 					video={project.video}
+					workPreview0={project.workPreview0}
+					workPreview1={project.workPreview1}
+					workPreview2={project.workPreview2}
+					workPreview3={project.workPreview3}
+					workPreview4={project.workPreview4}
+					workPreview5={project.workPreview5}
 				/>
 			) : (
 				<h1>Loading...</h1>

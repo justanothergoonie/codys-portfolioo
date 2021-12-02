@@ -5,6 +5,8 @@ import star from '../img/star.png';
 const Background = () => {
 	useEffect(() => {
 		const THREE = window.THREE;
+		const win = document.defaultView;
+
 		// console.log(THREE);
 		let scene, camera, renderer, starGeo, stars;
 		function init() {
@@ -12,17 +14,20 @@ const Background = () => {
 			scene = new THREE.Scene();
 			//setup camera with facing upward
 			camera = new THREE.PerspectiveCamera(
-				60,
+				45,
 				window.innerWidth / window.innerHeight,
-				1,
+				150,
 				1000
 			);
 			camera.position.z = 1;
 			camera.rotation.x = Math.PI / 2;
 			//setup renderer
 			renderer = new THREE.WebGLRenderer({ alpha: true });
-			// console.log(renderer.domElement);
 			renderer.setSize(window.innerWidth, window.innerHeight);
+			//this will resize the scene with the window
+			window.addEventListener('resize', function () {
+				renderer.setSize(window.innerWidth, window.innerHeight);
+			});
 			document.body.appendChild(renderer.domElement);
 			starGeo = new THREE.Geometry();
 			for (let i = 0; i < 6000; i++) {
@@ -63,6 +68,7 @@ const Background = () => {
 			starGeo.verticesNeedUpdate = true;
 			stars.rotation.y += 0.002;
 			renderer.render(scene, camera);
+
 			requestAnimationFrame(animate);
 		}
 		init();

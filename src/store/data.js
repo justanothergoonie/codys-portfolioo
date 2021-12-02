@@ -28,13 +28,54 @@ import experience1 from '../img/skills/experience/vue.png';
 import experience2 from '../img/skills/experience/node.png';
 import experience3 from '../img/skills/experience/unity.png';
 import experience4 from '../img/skills/experience/spark.png';
+import experience5 from '../img/skills/experience/aem.png';
+import experience6 from '../img/skills/experience/wordpress.png';
 
 import contact0 from '../img/contact/email.png';
 import contact1 from '../img/contact/insta.png';
 import contact2 from '../img/contact/git.png';
 import contact3 from '../img/contact/linkedin.png';
 
-// import me from '../img/me/me.jpeg';
+import workPreview0 from '../img/projectPreviews/jTrap/desktopTop.png';
+import workPreview1 from '../img/projectPreviews/jTrap/desktopMiddle.png';
+import workPreview2 from '../img/projectPreviews/jTrap/desktopBottom.png';
+import workPreview3 from '../img/projectPreviews/jTrap/desktopFooter.png';
+import workPreview4 from '../img/projectPreviews/jTrap/mobileTop.png';
+import workPreview5 from '../img/projectPreviews/jTrap/mobileMenu.png';
+
+import workPreview6 from '../img/projectPreviews/mafia/firstSlide.jpeg';
+
+import workPreview7 from '../img/projectPreviews/mindMAp/desktop1-min.jpg';
+import workPreview8 from '../img/projectPreviews/mindMAp/desktop2-min.jpg';
+import workPreview9 from '../img/projectPreviews/mindMAp/desktop3-min.jpg';
+import workPreview10 from '../img/projectPreviews/mindMAp/desktop4-min.jpg';
+
+import workPreview11 from '../img/projectPreviews/nodeMEssages/desktop1-min.jpg';
+import workPreview12 from '../img/projectPreviews/nodeMEssages/desktop2-min.jpg';
+import workPreview13 from '../img/projectPreviews/nodeMEssages/desktop3-min.jpg';
+// import workPreview14 from '../img/projectPreviews/nodeMEssages/desktop4-min.jpg';
+
+import workPreview15 from '../img/projectPreviews/poke/poke1-min.jpg';
+import workPreview16 from '../img/projectPreviews/poke/poke2-min.jpg';
+import workPreview17 from '../img/projectPreviews/poke/poke3-min.jpg';
+
+import workPreview18 from '../img/projectPreviews/succulents/desktop1.jpg';
+import workPreview19 from '../img/projectPreviews/succulents/desktop2.jpg';
+import workPreview20 from '../img/projectPreviews/succulents/desktop3.jpg';
+import workPreview21 from '../img/projectPreviews/succulents/desktop4.jpg';
+import workPreview22 from '../img/projectPreviews/succulents/mobile5.jpg';
+import workPreview23 from '../img/projectPreviews/succulents/mobile6.jpg';
+
+import workPreview24 from '../img/projectPreviews/tattoos/desktop1-min.jpg';
+import workPreview25 from '../img/projectPreviews/tattoos/desktop2-min.jpg';
+import workPreview26 from '../img/projectPreviews/tattoos/desktop3-min.jpg';
+
+import workPreview27 from '../img/projectPreviews/thirdWave/desktop1.jpg';
+import workPreview28 from '../img/projectPreviews/thirdWave/mobile2.jpg';
+
+import workPreview29 from '../img/projectPreviews/uni/desktop1.jpg';
+import workPreview30 from '../img/projectPreviews/uni/desktop2.jpg';
+import workPreview31 from '../img/projectPreviews/uni/desktop3.jpg';
 
 const data = {
 	activeProjectId: null,
@@ -58,6 +99,12 @@ const data = {
 			medium: 'HTML, SCSS',
 			previewDescription: `This responsive single page really well designed website uses CSS only hamburger buttons.`,
 			description: `This responsive single page really well designed website uses CSS only hamburger buttons.`,
+			workPreview0: workPreview0,
+			workPreview1: workPreview1,
+			workPreview2: workPreview2,
+			workPreview3: workPreview3,
+			workPreview4: workPreview4,
+			workPreview5: workPreview5,
 			link: 'https://www.gooniedev.com/johnnyTrapeze/index.html',
 			gitLink: 'https://github.com/justanothergoonie/johnnyTrapeze',
 		},
@@ -68,6 +115,9 @@ const data = {
 			medium: 'HTML, JS, AXIOS, Bootstrap',
 			previewDescription: `This helper app for Pokemon Go! players uses the Google Maps API and a public Pokedex API to plot likely real world locations for finding in-game pokemon. It uses Axios for AJAX and Bootstrap for styling.`,
 			description: `This helper app for Pokemon Go! players uses the Google Maps API and a public Pokedex API to plot likely real world locations for finding in-game pokemon. It uses Axios for AJAX and Bootstrap for styling.`,
+			workPreview0: workPreview15,
+			workPreview1: workPreview16,
+			workPreview2: workPreview17,
 			link: 'https://www.gooniedev.com/pokemonFinder/index.html',
 			gitLink: 'https://github.com/justanothergoonie/ajaxFinal',
 		},
@@ -78,6 +128,9 @@ const data = {
 			medium: 'HTML, SCSS, JS',
 			previewDescription: `This responsive multi-page really well designed website, uses complex design elements and a JS driven hamburger button.`,
 			description: `This responsive multi-page really well designed website, uses complex design elements and a JS driven hamburger button.`,
+			workPreview0: workPreview29,
+			workPreview1: workPreview30,
+			workPreview2: workPreview31,
 			link: 'https://www.gooniedev.com/uni/index.html',
 			gitLink: 'https://github.com/justanothergoonie/uni',
 		},
@@ -88,6 +141,12 @@ const data = {
 			medium: 'HTML, JS, SCSS',
 			previewDescription: `This responsive e-commerce website has complex angled buttons built with CSS pseudo-classes, custom animated drop-down select elements, and full ARIA accessability.`,
 			description: `This responsive e-commerce website has complex angled buttons built with CSS pseudo-classes, custom animated drop-down select elements, and full ARIA accessability.`,
+			workPreview0: workPreview18,
+			workPreview1: workPreview19,
+			workPreview2: workPreview20,
+			workPreview3: workPreview21,
+			workPreview4: workPreview22,
+			workPreview5: workPreview23,
 			link: 'https://www.gooniedev.com/southernSucculents/index.html',
 			gitLink: 'https://github.com/justanothergoonie/southernSucculents',
 		},
@@ -108,6 +167,8 @@ const data = {
 			medium: 'HTML, SCSS, JS, Waypoints, SVG Animations',
 			previewDescription: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
 			description: `This highly animated, responsive website uses SVGs and Greensock animation platform extensively.`,
+			workPreview0: workPreview27,
+			workPreview1: workPreview28,
 			link: 'https://www.gooniedev.com/sparkySpark/index.html',
 			gitLink: 'https://github.com/justanothergoonie/saprkySpark',
 		},
@@ -118,6 +179,10 @@ const data = {
 			medium: 'HTML, SCSS, GSAP, PHP',
 			previewDescription: `This web app was created with the purpose of being a huge mind map that starts with one word and spreads throughout the 100,000,000px plane and gets more and more chaotic as it goes.`,
 			description: `This web app was created with the purpose of being a huge mind map that starts with one word and spreads throughout the 100,000,000px plane and gets more and more chaotic as it goes. Using php it gets its data from a server so it can be displayed on any screen and you can add words from your phone and see them added to the screen in real time. GSAP is used to see the stylings you apply in real time on your phone. Special thanks to designers Maddie Sherlock and Nick Callender.`,
+			workPreview0: workPreview7,
+			workPreview1: workPreview8,
+			workPreview2: workPreview9,
+			workPreview3: workPreview10,
 			link: 'http://circuslabs.net/~cody.powell/circus/portfolioPieces/mindbrain/?x=612&y=444.5',
 			gitLink: 'https://github.com/justanothergoonie/mind_map',
 		},
@@ -128,6 +193,9 @@ const data = {
 			medium: 'HTML, SCSS, JS',
 			previewDescription: `This responsive site has custom form field styling as well as functionality to prohibit access to those under a certain age, as well as full ARIA accessability. Design was created by consulting with the artist featured.`,
 			description: `This responsive site has custom form field styling as well as functionality to prohibit access to those under a certain age, as well as full ARIA accessability. Design was created by consulting with the artist featured.`,
+			workPreview0: workPreview24,
+			workPreview1: workPreview25,
+			workPreview2: workPreview26,
 			link: 'https://www.gooniedev.com/nguyenTattoos/index.html',
 			gitLink:
 				'https://github.com/justanothergoonie/webDev4Week1Homework',
@@ -141,6 +209,7 @@ const data = {
 			previewDescription: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG,The Greensock animation platform, and vanilla JS.`,
 			description: `This web-based educational experience takes custom character illustrations and animations and brings them to life in a complex side-scrolling website, using SVG,The Greensock animation platform, and vanilla JS. 
 			Special thanks to designers Maddie Sherlock and Nick Callender.`,
+			workPreview0: workPreview6,
 			link: 'https://www.gooniedev.com/mafiaProject/index.html',
 			gitLink: 'https://github.com/justanothergoonie/mafiaProject',
 		},
@@ -152,6 +221,9 @@ const data = {
 			medium: 'Node.js, Socket.io, Bootstrap, Gulp, Heroku',
 			previewDescription: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms.`,
 			description: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms. It was made using Node.js to create a local server and Socket.io to link two or more people to talk using GIFs brought in with the giphy API and then combined with a dictionary API to pull synonyms of the words from your message. Open the site on more then one device in order to get the full effect and play with the app, see who can stump who the most.`,
+			workPreview0: workPreview11,
+			workPreview1: workPreview12,
+			workPreview2: workPreview13,
 			link: 'https://giphymessags.herokuapp.com/',
 			gitLink: 'https://github.com/justanothergoonie/nodeGifMessages',
 		},
@@ -177,6 +249,11 @@ const data = {
 			video: `<iframe width="420" height="345" src='https://www.youtube.com/embed/sHjcJsvjgaw'></iframe>`,
 		},
 	],
+	// projectPreviews: [
+	// 	{
+	// 		id: 'project-title-13',
+	// 	},
+	// ],
 	expertise: [
 		{
 			id: 'expert0',
@@ -263,6 +340,20 @@ const data = {
 			alt: 'Spark.AR',
 			link: 'https://sparkar.facebook.com/ar-studio/',
 			image: experience4,
+		},
+		{
+			id: 'experience5',
+			title: 'Adobe Experience Manager',
+			alt: 'Adobe Experience Manager',
+			link: 'hhttps://business.adobe.com/products/experience-manager/adobe-experience-manager.html',
+			image: experience5,
+		},
+		{
+			id: 'experience6',
+			title: 'WordPress',
+			alt: 'WordPress',
+			link: 'https://wordpress.com/',
+			image: experience6,
 		},
 	],
 	contactInfo: [

@@ -11,6 +11,12 @@ const ProjectPage = ({
 	gitLink,
 	id,
 	video,
+	workPreview0,
+	workPreview1,
+	workPreview2,
+	workPreview3,
+	workPreview4,
+	workPreview5,
 }) => {
 	const history = useHistory();
 	const location = useLocation();
@@ -81,16 +87,29 @@ const ProjectPage = ({
 						</div>
 					</aside>
 				</div>
+				<h2 className="pnd">Previews &amp; Designs</h2>
 				<div
 					dangerouslySetInnerHTML={{ __html: video }}
 					className="vid"
 				/>
 				<div className="project-page__project__pics" ref={ref}>
 					<div className="project-page__project__pics-pic">
-						<img src="" alt="" />
+						<img src={workPreview0} alt="" />
 					</div>
 					<div className="project-page__project__pics-pic">
-						<img src="" alt="" />
+						<img src={workPreview1} alt="" />
+					</div>
+					<div className="project-page__project__pics-pic">
+						<img src={workPreview2} alt="" />
+					</div>
+					<div className="project-page__project__pics-pic">
+						<img src={workPreview3} alt="" />
+					</div>
+					<div className="project-page__project__pics-pic">
+						<img src={workPreview4} alt="" />
+					</div>
+					<div className="project-page__project__pics-pic">
+						<img src={workPreview5} alt="" />
 					</div>
 				</div>
 			</div>
