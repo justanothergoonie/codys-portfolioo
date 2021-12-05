@@ -38,12 +38,9 @@ import contact3 from '../img/contact/linkedin.png';
 
 import workPreview0 from '../img/projectPreviews/jTrap/dektopTop.jpg';
 import workPreview1 from '../img/projectPreviews/jTrap/mobileButton.jpg';
-// import workPreview2 from '../img/projectPreviews/jTrap/desktopBottom.png';
-// import workPreview3 from '../img/projectPreviews/jTrap/desktopFooter.png';
-// import workPreview4 from '../img/projectPreviews/jTrap/mobileTop.png';
-// import workPreview5 from '../img/projectPreviews/jTrap/mobileMenu.png';
 
-import workPreview6 from '../img/projectPreviews/mafia/firstSlide.jpeg';
+
+import workPreview6 from '../img/projectPreviews/mafia/firstSlide.jpg';
 
 import workPreview7 from '../img/projectPreviews/mindMAp/desktop1-min.jpg';
 import workPreview8 from '../img/projectPreviews/mindMAp/desktop2-min.jpg';
@@ -71,7 +68,7 @@ import workPreview25 from '../img/projectPreviews/tattoos/desktop2-min.jpg';
 import workPreview26 from '../img/projectPreviews/tattoos/desktop3-min.jpg';
 
 import workPreview27 from '../img/projectPreviews/thirdWave/desktop1.jpg';
-import workPreview28 from '../img/projectPreviews/thirdWave/mobile2.jpg';
+
 
 import workPreview29 from '../img/projectPreviews/uni/desktop1.jpg';
 import workPreview30 from '../img/projectPreviews/uni/desktop2.jpg';
