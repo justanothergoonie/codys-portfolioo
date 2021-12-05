@@ -9,7 +9,7 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import trees from '../img/trees.png';
 import Contact from '../components/footer';
-import Load from '../components/loader';
+
 
 import { Context } from '../store/store';
 
@@ -27,7 +27,7 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 	const hideModal = () => {
 		dispatch({ type: 'TOGGLE_MODAL_SHOW', payload: state.show });
 	};
-	// console.log(size, displayModal);
+
 
 	return (
 		<div className="wrap">

@@ -3328,38 +3328,7 @@ const data = {
 			video: `<iframe width="420" height="345" src='https://www.youtube.com/embed/sHjcJsvjgaw?autoplay=1&mute=1'></iframe>`,
 		},
 	],
-	// projectPreviews: [ 
-	// 	{
-	// 		id: 'project-title-5',
-	// 		workPreview0: workPreview18,
-	// 		workDescription0:`Interesting and unique elements brought this design to my eye while searching for a site to develop while learning how ot make a site full accessible with ARIA.`,
-	// 		workPreview1: workPreview19,
-	// 		workPreview2: workPreview20,
-	// 		workDescription1:`Almost all of the buttons, and some of the titles, are made using pseudo-classes to give them the unique shapes seen in the design.`,
-	// 		workPreview3: workPreview22,
-	// 		workDescription2:`A custom JS driven dropdown menu was created and used in multiple places throughout the site.`,
-	// 		workPreview4: workPreview21,
-	// 		workPreview5: workPreview23,
 
-	// 	},
-	// 	{
-	// 		id: 'project-title-4',
-	// 		workPreview0: workPreview15,
-	// 		workDescription0: `Start by entering the location of where you would like to search, followed by the Pokemon you would like to find, finally enter the search radius.`,
-	// 		workPreview1: workPreview16,
-	// 		workDescription1:`The Pokemon you searched for will drop on on the map in corelation to where they would most likely be found in real life by combining Pokemon type and places on the Google Places API.`,
-	// 		workPreview2: workPreview17,
-	// 		workDescription2:`You can search for and add as many Pokemon till your hearts content.`,
-	// 	},
-	// 	{
-	// 		id: 'project-title-15',
-	// 		video: `<iframe width="420" height="345" src='https://www.youtube.com/embed/sHjcJsvjgaw?autoplay=1&mute=1'></iframe>`,
-	// 	},
-	// 	{
-	// 		id: 'project-title-10',
-	// 		video:`<iframe width="420" height="345" src='https://www.youtube.com/embed/uJhUMQME-pg?playlist=uJhUMQME-pg&autoplay=1&mute=1&loop=1'></iframe>`,
-	// 	},
-	// ],
 	expertise: [
 		{
 			id: 'expert0',

@@ -33,24 +33,15 @@ const ProjectPage = ({
 	useEffect(() => {
 		if (location.pathname !== '/') {
 			nav.classList.add('hidden');
-			console.log(nav);
+			
 		} else {
 			nav.classList.remove('hidden');
-			console.log(nav);
+	
 		}
 	}, [location]);
-	// useEffect(() => {
-	// 	if (location.pathname === '/projects/project-title-15') {
-	// 		console.log(img);
-	// 		console.log(ref.current);
-	// 		// ref.current.classList.add('hidden');
-	// 	} else {
-	// 		console.log(img);
-	// 		console.log('hey it the vr project');
-	// 	}
-	// }, [location]);
+
 	const handleSubmit = (e) => {
-		// history.push(`/#${id}`);
+	
 		history.goBack();
 	};
 	return (
@@ -62,11 +53,7 @@ const ProjectPage = ({
 			<div className="project-page__project">
 				<h1>{title}</h1>
 				<div className="project-page__project__i__needed__this__to__make__flex__work">
-					{/* <img
-						src={image}
-						alt={title}
-						className="project-page__project__img"
-					/> */}
+
 					<div
 					className="project-page__project__img"
 					dangerouslySetInnerHTML={{ __html: svgImage }}>

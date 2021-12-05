@@ -29,7 +29,7 @@ const RouterArchitecture = () => {
 			left: 0,
 			behavior: 'smooth',
 		});
-		console.log(scrollY, 'hello its scrolled');
+	
 		dispatch({
 			type: 'TOGGLE_MENU_SHOW',
 			payload: !state.menuShow,
@@ -46,7 +46,7 @@ const RouterArchitecture = () => {
 		{ path: '/', name: 'Home', Component: Home, props: homeProps },
 		{ path: '/projects/:id', name: 'Project', Component: Project },
 	];
-	// console.log(routes);
+	
 	return (
 		<>
 			<Nav scrollTo={(s) => scrollTo(s)} />

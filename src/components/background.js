@@ -7,7 +7,7 @@ const Background = () => {
 		const THREE = window.THREE;
 		const win = document.defaultView;
 
-		// console.log(THREE);
+		
 		let scene, camera, renderer, starGeo, stars;
 		function init() {
 			//create scene object
@@ -51,12 +51,12 @@ const Background = () => {
 			});
 			stars = new THREE.Points(starGeo, starMaterial);
 			scene.add(stars);
-			// console.log(star);
+		
 			animate();
 		}
 		//rendering loop
 		function animate() {
-			// console.log('animating')
+		
 			starGeo.vertices.forEach((p) => {
 				p.velocity += p.acceleration;
 				p.y -= p.velocity;
