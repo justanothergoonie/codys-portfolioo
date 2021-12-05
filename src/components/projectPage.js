@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useRef } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import back from '../img/back-btn.png';
 import { Context } from '../store/store';
-import Preview from './projectPreviews';
+
 
 const ProjectPage = ({
 	title,
@@ -12,15 +12,7 @@ const ProjectPage = ({
 	gitLink,
 	id,
 	svgImage,
-	// video,
-	// workPreview0,
-	// workPreview1,
-	// workPreview2,
-	// workPreview3,
-	// workPreview4,
-	// workPreview5,
-	// // pokeWorkDescription0,
-	// // sucWorkDescription0
+
 }) => {
 	const history = useHistory();
 	const location = useLocation();
