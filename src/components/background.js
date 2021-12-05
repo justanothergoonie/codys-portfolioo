@@ -14,9 +14,9 @@ const Background = () => {
 			scene = new THREE.Scene();
 			//setup camera with facing upward
 			camera = new THREE.PerspectiveCamera(
-				45,
+				60,
 				window.innerWidth / window.innerHeight,
-				150,
+				1,
 				1000
 			);
 			camera.position.z = 1;

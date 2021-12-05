@@ -2,6 +2,7 @@ import React, { useEffect, useContext, useRef } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import back from '../img/back-btn.png';
 import { Context } from '../store/store';
+import Preview from './projectPreviews';
 
 const ProjectPage = ({
 	title,
@@ -10,13 +11,16 @@ const ProjectPage = ({
 	link,
 	gitLink,
 	id,
-	video,
-	workPreview0,
-	workPreview1,
-	workPreview2,
-	workPreview3,
-	workPreview4,
-	workPreview5,
+	svgImage,
+	// video,
+	// workPreview0,
+	// workPreview1,
+	// workPreview2,
+	// workPreview3,
+	// workPreview4,
+	// workPreview5,
+	// // pokeWorkDescription0,
+	// // sucWorkDescription0
 }) => {
 	const history = useHistory();
 	const location = useLocation();
@@ -24,7 +28,7 @@ const ProjectPage = ({
 	const [state, dispatch] = useContext(Context);
 
 	const nav = document.querySelector('.menu');
-	const img = ref.current;
+	// const img = ref.current;
 
 	useEffect(() => {
 		if (location.pathname !== '/') {
@@ -35,16 +39,16 @@ const ProjectPage = ({
 			console.log(nav);
 		}
 	}, [location]);
-	useEffect(() => {
-		if (location.pathname === '/projects/project-title-15') {
-			console.log(img);
-			console.log(ref.current);
-			// ref.current.classList.add('hidden');
-		} else {
-			console.log(img);
-			console.log('hey it the vr project');
-		}
-	}, [location]);
+	// useEffect(() => {
+	// 	if (location.pathname === '/projects/project-title-15') {
+	// 		console.log(img);
+	// 		console.log(ref.current);
+	// 		// ref.current.classList.add('hidden');
+	// 	} else {
+	// 		console.log(img);
+	// 		console.log('hey it the vr project');
+	// 	}
+	// }, [location]);
 	const handleSubmit = (e) => {
 		// history.push(`/#${id}`);
 		history.goBack();
@@ -58,11 +62,17 @@ const ProjectPage = ({
 			<div className="project-page__project">
 				<h1>{title}</h1>
 				<div className="project-page__project__i__needed__this__to__make__flex__work">
-					<img
+					{/* <img
 						src={image}
 						alt={title}
 						className="project-page__project__img"
-					/>
+					/> */}
+					<div
+					className="project-page__project__img"
+					dangerouslySetInnerHTML={{ __html: svgImage }}>
+
+					</div>
+					
 					<aside>
 						<div
 							className="project-page__project__description"
@@ -87,33 +97,11 @@ const ProjectPage = ({
 						</div>
 					</aside>
 				</div>
-				<h2 className="pnd">Previews &amp; Designs</h2>
-				<div
-					dangerouslySetInnerHTML={{ __html: video }}
-					className="vid"
-				/>
-				<div className="project-page__project__pics" ref={ref}>
-					<div className="project-page__project__pics-pic">
-						<img src={workPreview0} alt="" />
-					</div>
-					<div className="project-page__project__pics-pic">
-						<img src={workPreview1} alt="" />
-					</div>
-					<div className="project-page__project__pics-pic">
-						<img src={workPreview2} alt="" />
-					</div>
-					<div className="project-page__project__pics-pic">
-						<img src={workPreview3} alt="" />
-					</div>
-					<div className="project-page__project__pics-pic">
-						<img src={workPreview4} alt="" />
-					</div>
-					<div className="project-page__project__pics-pic">
-						<img src={workPreview5} alt="" />
-					</div>
-				</div>
+		
 			</div>
+		
 		</div>
+		
 	);
 };
 export default ProjectPage;
