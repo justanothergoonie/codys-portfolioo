@@ -1,0 +1,85 @@
+.skills {
+	background-image: url(../img/aurora.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15rem;
+	padding-bottom: 25rem;
+	margin-bottom: 10rem;
+	@include bp-med {
+		padding-bottom: 35rem;
+	}
+	.expertise-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 2.5rem;
+		@include bp-med {
+			width: 70%;
+		}
+
+		h2 {
+			font-size: 2rem;
+			@include bp-med {
+				margin: 4rem;
+			}
+		}
+		.skills__expertise {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			.skills__definer {
+				width: 15%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 9%;
+				align-items: center;
+				cursor: pointer;
+				a {
+					display: flex;
+					justify-content: center;
+				}
+				@include bp-med {
+					margin: 5%;
+				}
+			}
+		}
+	}
+	.experience-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2.5rem;
+		@include bp-med {
+			width: 70%;
+			margin-top: 8.5rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+			@include bp-med {
+				margin: 4rem;
+			}
+		}
+		.skills__experience {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			.skills__definer {
+				width: 15%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 9%;
+				align-items: center;
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+footer {
+	position: relative;
+	// bottom: 100%;
+	h2 {
+		margin: 2rem;
+	}
+	.trees-container {
+		width: 100vw;
+		position: relative;
+		bottom: -1px;
+		// z-index: 1;
+		transform: scale(1.5);
+		img {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	.contact-container {
+		display: flex;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// z-index: 2;
+		.contact-at {
+			display: flex;
+			// width: 50%;
+			justify-content: space-around;
+			div {
+				width: 25%;
+				a {
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	span {
+		margin: 2rem;
+	}
+}
