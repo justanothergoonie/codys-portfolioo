@@ -5,7 +5,7 @@ const Skills = ({ id, title, alt, image, link }) => {
 		<div className="skills__definer">
 			<ToolTip text={title}>
 			<a href={link} target="_blank" rel="noopener noreferrer">
-				<img src={image} className="skill" />
+				<img src={image} alt={alt} className="skill" />
 			</a>
 			</ToolTip>
 		</div>

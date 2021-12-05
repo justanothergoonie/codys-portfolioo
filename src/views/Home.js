@@ -49,6 +49,7 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 						title,
 						medium,
 						gitLink,
+						alt,
 					} = project;
 					const flipped = index % 2 === 0;
 
@@ -59,6 +60,7 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 							showModal={() => showModal(id)}
 							id={id}
 							title={title}
+							alt={alt}
 							image={image}
 							medium={medium}
 							previewDescription={previewDescription}

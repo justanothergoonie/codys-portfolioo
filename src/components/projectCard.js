@@ -11,6 +11,7 @@ const ProjectCard = ({
 	showModal,
 	medium,
 	gitLink,
+	alt
 }) => {
 	const history = useHistory();
 	const projectClass = flipped ? 'project project--flipped' : 'project';
@@ -19,9 +20,9 @@ const ProjectCard = ({
 		<div className={projectClass} id={id}>
 			<div className="constellation-definer">
 				{display ? (
-					<img src={image} alt={title} onClick={showModal} />
+					<img src={image} alt={alt} onClick={showModal} />
 				) : (
-					<img src={image} alt={title} />
+					<img src={image} alt={alt} />
 				)}
 			</div>
 			<h2 className="mobile-title">{title}</h2>

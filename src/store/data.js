@@ -84,6 +84,7 @@ const data = {
 			id: 'project-title-0',
 			title: 'Hello there!'.toUpperCase(),
 			image: project11,
+			alt:'React Logo Constellation',
 			medium: 'React, Three.js, SCSS, HTML',
 			previewDescription: `This portfolio site is built on React,  uses Three.js for the flying star animations, and  a mix of CSS transforms and vanilla JS scrolling for the page transitions.  For the best effect, view while listening to <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" class="lofi" target="_blank" rel="noopener noreferrer"> Lofi hip hop beats to relax/study to.</a>`,
 			link: 'https://github.com/justanothergoonie/codys-portfolioo',
@@ -93,6 +94,7 @@ const data = {
 			id: 'project-title-13',
 			title: 'Johnny Trapeze'.toUpperCase(),
 			image: project12,
+			alt:'Camera Constellation',
 			medium: 'HTML, SCSS',
 			previewDescription: `This responsive single page really well designed website uses CSS only hamburger buttons.`,
 			description: `This responsive single page really well designed website uses CSS only hamburger buttons.`,
@@ -111,6 +113,7 @@ const data = {
 			id: 'project-title-4',
 			title: 'Pokemon Finder'.toUpperCase(),
 			image: project3,
+			alt:'Pokeball Constellation',
 			svgImage:`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="322" height="323" viewBox="0 0 322 323">
 			<defs>
 			  <style>
@@ -490,6 +493,7 @@ const data = {
 			id: 'project-title-12',
 			title: 'Uni'.toUpperCase(),
 			image: project13,
+			alt:'Unicycle Constellation',
 			medium: 'HTML, SCSS, JS',
 			previewDescription: `This responsive multi-page designed website, uses complex design elements and a JS driven hamburger button.`,
 			description: `This responsive multi-page designed website, uses complex design elements and a JS driven hamburger button.`,
@@ -505,6 +509,7 @@ const data = {
 			id: 'project-title-5',
 			title: 'Southeast Succulents'.toUpperCase(),
 			image: project4,
+			alt:'Plant Constellation',
 			svgImage:`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="337" height="336" viewBox="0 0 337 336">
 			<defs>
 			  <style>
@@ -872,6 +877,7 @@ const data = {
 			id: 'project-title-9',
 			title: 'Third Wave Energy'.toUpperCase(),
 			image: project8,
+			alt:'Third Wave logo Constellation',
 			svgImage:`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="352" height="176" viewBox="0 0 352 176">
 			<defs>
 			  <style>
@@ -1579,6 +1585,7 @@ const data = {
 			id: 'project-title-6',
 			title: 'Mind Brain'.toUpperCase(),
 			image: project5,
+			alt:'Idea Constellation',
 			svgImage:`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="249" height="416" viewBox="0 0 249 416">
 			<defs>
 			  <style>
@@ -2082,6 +2089,7 @@ const data = {
 			id: 'project-title-3',
 			title: 'Nguyening Tattoos'.toUpperCase(),
 			image: project2,
+			alt:'Tattoo Gun Constellation',
 			svgImage:`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="343" height="360" viewBox="0 0 343 360">
 			<defs>
 			  <style>
@@ -2419,6 +2427,7 @@ const data = {
 			id: 'project-title-7',
 			title: 'Mafia Experience'.toUpperCase(),
 			image: project6,
+			alt:'Hat Constellation',
 			svgImage:`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="297" height="256" viewBox="0 0 297 256">
 			<defs>
 			  <style>
@@ -2832,6 +2841,7 @@ const data = {
 			id: 'project-title-11',
 			title: 'Node Messaging'.toUpperCase(),
 			image: project14,
+			alt:'Text Constellation',
 			medium: 'Node.js, Socket.io, Bootstrap, AXIOS, Gulp, Heroku',
 			previewDescription: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms.`,
 			description: `This simple yet ridiculous web messaging app is a game of sorts with the object being that you're trying to figure out what the other person said using only gifs and synonyms. It was made using Node.js to create a local server and Socket.io to link two or more people to talk using GIFs brought in with the giphy API and then combined with a dictionary API to pull synonyms of the words from your message. Open the site on more then one device in order to get the full effect and play with the app, see who can stump who the most.`,
@@ -2848,6 +2858,7 @@ const data = {
 			id: 'project-title-10',
 			title: 'Ping-Pong Clock'.toUpperCase(),
 			image: project9,
+			alt:'Clock Constellation',
 			svgImage:`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="346" height="183" viewBox="0 0 346 183">
 			<defs>
 			  <style>
@@ -3317,6 +3328,7 @@ const data = {
 			id: 'project-title-15',
 			title: 'VR Music Visualizer'.toUpperCase(),
 			image: project15,
+			alt:'Headset Constellation',
 			medium: 'Unity, C#, Bolt',
 			previewDescription: `This virtual reality experience brings the classic Windows Music Player to life all around you. Using the Unity engine, an Oculus Go 2, and any music files from remix packs found online the songs are brought to life allowing you to see and feel them.`,
 			description: `This virtual reality experience brings the classic Windows Music Player to life all around you. Using the Unity engine, an Oculus Go 2, and any music files from remix packs found online the songs are brought to life allowing you to see and feel them.`,
