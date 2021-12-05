@@ -79,6 +79,12 @@
 				margin: 9%;
 				align-items: center;
 				cursor: pointer;
+                img{
+                    :hover{
+                        cursor: pointer; 
+                    }
+                }
+             
 			}
 		}
 	}
