@@ -1,3 +1,5 @@
+$breakpoint-x: 375px;
+
 $breakpoint-mobile: 480px;
 
 $breakpoint-tablet: 768px;
@@ -13,6 +15,11 @@ $breakpoint-desktop: 1024px;
 	justify-content: center;
 }
 
+@mixin bp-x {
+	@media screen and (min-width: $breakpoint-x) {
+		@content;
+	}
+}
 @mixin bp-small {
 	@media screen and (min-width: $breakpoint-mobile) {
 		@content;

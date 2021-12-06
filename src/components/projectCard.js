@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 const ProjectCard = ({
 	id,
 	image,
+	svgImage,
 	title,
 	previewDescription,
 	link,
@@ -24,6 +25,7 @@ const ProjectCard = ({
 				) : (
 					<img src={image} alt={alt} />
 				)}
+
 			</div>
 			<h2 className="mobile-title">{title}</h2>
 			<div className="project-info">

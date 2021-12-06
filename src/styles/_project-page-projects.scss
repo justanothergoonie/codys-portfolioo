@@ -27,12 +27,20 @@
 				margin: 5rem auto;
 				width: 70%;
 			}
-			.project-page__project__img{
+			@include bp-large{
+				margin: 0 auto;
+			}
+			.project__image{
+				min-width: 50%;
+				.project-page__project__img{
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				margin-bottom: 1.5rem;
+				// margin-bottom: 1.5rem;
+				width: 100%;
+			}	
 			}
+		
 			// img {
 			// 	width: 100%;
 			// 	@include bp-med {

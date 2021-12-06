@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 638.52 447.88">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        opacity: 0.11;
+      }
+
+      .cls-3 {
+        opacity: 0.9;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #71d9f4;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-10, .cls-12, .cls-14, .cls-5, .cls-6, .cls-8 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-7 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-8 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-9 {
+        fill: url(#radial-gradient-4);
+      }
+
+      .cls-10 {
+        fill: url(#radial-gradient-5);
+      }
+
+      .cls-11 {
+        fill: url(#radial-gradient-6);
+      }
+
+      .cls-12 {
+        fill: url(#radial-gradient-7);
+      }
+
+      .cls-13 {
+        fill: url(#radial-gradient-8);
+      }
+
+      .cls-14 {
+        fill: url(#radial-gradient-9);
+      }
+
+      .cls-15 {
+        fill: url(#radial-gradient-10);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="-763.65" cy="-625.33" r="42.07" gradientTransform="translate(139.88 1060.21) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.1" stop-color="#fbfbfb" stop-opacity="0.82"/>
+      <stop offset="0.23" stop-color="#f5f6f6" stop-opacity="0.61"/>
+      <stop offset="0.37" stop-color="#f1f1f2" stop-opacity="0.42"/>
+      <stop offset="0.5" stop-color="#ededee" stop-opacity="0.27"/>
+      <stop offset="0.63" stop-color="#eaebeb" stop-opacity="0.15"/>
+      <stop offset="0.76" stop-color="#e8e9ea" stop-opacity="0.07"/>
+      <stop offset="0.88" stop-color="#e6e7e8" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#e6e7e8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="-763.65" cy="-625.83" r="20.62" gradientTransform="translate(139.88 1060.21) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.13" stop-color="#fdfefe" stop-opacity="0.97"/>
+      <stop offset="0.34" stop-color="#f9fafa" stop-opacity="0.88"/>
+      <stop offset="0.6" stop-color="#f3f3f4" stop-opacity="0.74"/>
+      <stop offset="0.9" stop-color="#e9eaeb" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#e6e7e8" stop-opacity="0.48"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="-141.01" cy="-786.69" r="42.07" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-4" cx="-141.01" cy="-787.18" r="20.62" xlink:href="#radial-gradient-2"/>
+    <radialGradient id="radial-gradient-5" cx="-549.52" cy="-647.59" r="42.07" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-6" cx="-549.52" cy="-648.09" r="20.62" xlink:href="#radial-gradient-2"/>
+    <radialGradient id="radial-gradient-7" cx="-472.4" cy="-453.08" r="42.07" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-8" cx="-472.4" cy="-453.57" r="20.62" xlink:href="#radial-gradient-2"/>
+    <radialGradient id="radial-gradient-9" cx="-437.03" cy="-951.95" r="42.07" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-10" cx="-437.03" cy="-952.45" r="20.62" xlink:href="#radial-gradient-2"/>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_1" data-name="Layer 1">
+      <g id="Camera">
+        <g id="outline">
+          <image class="cls-2" width="603" height="427" transform="translate(17.76)" xlink:href="Constellations-131.png"/>
+          <g>
+            <image class="cls-3" width="571" height="398" transform="translate(33.76 15)" xlink:href="Constellations-132.png"/>
+            <polygon class="cls-4" points="596.44 74.31 596.44 404.23 42.07 404.23 42.07 74.31 96.82 74.31 96.82 23.23 235 23.23 235 74.31 596.44 74.31"/>
+          </g>
+        </g>
+        <g id="circle">
+          <image class="cls-2" width="297" height="294" transform="translate(184.76 93)" xlink:href="Constellations-133.png"/>
+          <g>
+            <image class="cls-3" width="265" height="265" transform="translate(200.76 107)" xlink:href="Constellations-134.png"/>
+            <circle class="cls-4" cx="333.35" cy="239.61" r="124.12"/>
+          </g>
+        </g>
+        <g id="heart">
+          <image class="cls-2" width="199" height="182" transform="translate(233.76 156)" xlink:href="Constellations-135.png"/>
+          <g>
+            <image class="cls-3" width="169" height="155" transform="translate(248.76 170)" xlink:href="Constellations-136.png"/>
+            <path class="cls-4" d="M383.74,422.36l-.1.1-62.72,60.19-69.25-64.43,0,0a45.5,45.5,0,0,1,48-71.11c7.78,2,14.56,8.08,20,13.26,5.7-4.81,12.66-10.44,20.49-12a45.52,45.52,0,0,1,43.62,74Z" transform="translate(14.76 -167)"/>
+          </g>
+        </g>
+        <g id="star">
+          <circle class="cls-5" cx="42.07" cy="78.05" r="42.07"/>
+          <g class="cls-6">
+            <polygon class="cls-7" points="43.15 82.7 66.72 102.7 46.72 79.13 59.86 78.05 46.72 76.98 66.72 53.41 43.15 73.41 42.07 60.27 41 73.41 17.43 53.41 37.43 76.98 24.29 78.06 37.43 79.13 17.43 102.7 41 82.7 42.07 95.84 43.15 82.7"/>
+          </g>
+        </g>
+        <g id="star-2" data-name="star">
+          <circle class="cls-8" cx="596.44" cy="404.23" r="42.07"/>
+          <g class="cls-6">
+            <polygon class="cls-9" points="597.52 408.88 621.09 428.87 601.09 405.31 614.23 404.23 601.09 403.15 621.09 379.58 597.52 399.58 596.44 386.45 595.37 399.58 571.8 379.58 591.8 403.15 578.66 404.23 591.8 405.31 571.8 428.87 595.37 408.88 596.44 422.01 597.52 408.88"/>
+          </g>
+        </g>
+        <g id="star-3" data-name="star">
+          <circle class="cls-10" cx="209.23" cy="213.73" r="42.07"/>
+          <g class="cls-6">
+            <polygon class="cls-11" points="210.31 218.38 233.88 238.37 213.88 214.81 227.01 213.73 213.88 212.65 233.87 189.09 210.31 209.08 209.23 195.95 208.15 209.08 184.59 189.09 204.58 212.65 191.45 213.73 204.58 214.81 184.59 238.37 208.15 218.38 209.23 231.51 210.31 218.38"/>
+          </g>
+        </g>
+        <g id="star-4" data-name="star">
+          <circle class="cls-12" cx="126.22" cy="405.8" r="42.07"/>
+          <g class="cls-6">
+            <polygon class="cls-13" points="127.3 410.45 150.87 430.45 130.87 406.88 144 405.8 130.87 404.73 150.86 381.16 127.3 401.16 126.22 388.02 125.14 401.16 101.58 381.16 121.58 404.73 108.44 405.8 121.58 406.88 101.58 430.45 125.14 410.45 126.22 423.58 127.3 410.45"/>
+          </g>
+        </g>
+        <g id="star-5" data-name="star">
+          <circle class="cls-14" cx="503.99" cy="78.05" r="42.07"/>
+          <g class="cls-6">
+            <polygon class="cls-15" points="505.06 82.7 528.63 102.7 508.63 79.13 521.77 78.05 508.63 76.98 528.63 53.41 505.06 73.41 503.99 60.27 502.91 73.41 479.34 53.41 499.34 76.98 486.2 78.06 499.34 79.13 479.34 102.7 502.91 82.7 503.99 95.84 505.06 82.7"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

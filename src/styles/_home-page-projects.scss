@@ -2,6 +2,20 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	:first-child{
+		.project-info{
+			h2{
+				text-align: left !important;
+			}
+			p{
+				text-align: left !important;
+			}
+			span {
+				text-align: left !important;
+			}
+			
+		}
+	}
 	.project {
 		display: flex;
 		flex-direction: column;
@@ -34,17 +48,23 @@
 			// opacity: 1;
 			align-items: center;
 
-			cursor: pointer;
+			:hover{cursor: pointer;}
 			@include bp-med {
+				:hover{
+					cursor: unset;
+				}
 				animation: unset;
 				cursor: unset;
 				opacity: 1;
 			}
 			img {
+				width: 100%;
 				@include bp-med {
 					transform: scale(1.25);
 				}
+				
 			}
+			
 		}
 		.project-info {
 			display: none;
@@ -59,7 +79,7 @@
 				h2 {
 					font-size: 2.5rem;
 					margin-bottom: 1rem;
-					text-align: right;
+					text-align: left;
 				}
 				p {
 					line-height: 1.7rem;
@@ -226,6 +246,9 @@
 		.constellation-definer {
 			display: flex;
 			justify-content: center;
+			img{
+				width: 100%;
+			}
 		}
 		.project-info-modal {
 			display: flex;

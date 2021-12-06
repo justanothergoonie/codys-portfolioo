@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useRef } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import back from '../img/back-btn.png';
 import { Context } from '../store/store';
-
+import Preview from './projectPreviews';
 
 const ProjectPage = ({
 	title,
@@ -11,8 +11,6 @@ const ProjectPage = ({
 	link,
 	gitLink,
 	id,
-	svgImage,
-
 }) => {
 	const history = useHistory();
 	const location = useLocation();
@@ -33,7 +31,7 @@ const ProjectPage = ({
 	}, [location]);
 
 	const handleSubmit = (e) => {
-	
+		// history.push(`/#${id}`);
 		history.goBack();
 	};
 	return (
@@ -45,12 +43,15 @@ const ProjectPage = ({
 			<div className="project-page__project">
 				<h1>{title}</h1>
 				<div className="project-page__project__i__needed__this__to__make__flex__work">
-
-					<div
-					className="project-page__project__img"
-					dangerouslySetInnerHTML={{ __html: svgImage }}>
-
+					<div className="project__image">
+					<img
+						src={image}
+						alt={title}
+						className="project-page__project__img"
+					/>
 					</div>
+
+	
 					
 					<aside>
 						<div

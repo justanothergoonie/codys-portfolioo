@@ -411,11 +411,18 @@
 		}
 	}
 	.head__info {
-		line-height: 3rem;
-		margin-left: 1rem;
-		width: 50%;
+		@include bp-x{
+			width: 50%;
+			margin-left: 1rem;
+		}
+		@include bp-small{
+			width: unset;
+			line-height: 2.5rem;
+		}
+		
 		@include bp-med {
 			width: auto;
+			line-height: 3rem;
 		}
 		h1 {
 			font-size: 2.8rem;

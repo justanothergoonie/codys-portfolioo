@@ -8,7 +8,7 @@
 	align-items: center;
 	margin-top: 15rem;
 	padding-bottom: 25rem;
-	margin-bottom: 10rem;
+	margin-bottom: 5rem;
 	@include bp-med {
 		padding-bottom: 35rem;
 	}
@@ -43,6 +43,9 @@
 				a {
 					display: flex;
 					justify-content: center;
+					img{
+						width: 100%;
+					}
 				}
 				@include bp-med {
 					margin: 5%;
@@ -79,7 +82,16 @@
 				margin: 9%;
 				align-items: center;
 				cursor: pointer;
+				:hover{
+					cursor: pointer; 
+				}
+				a:hover{
+					cursor: pointer; 
+				}
                 img{
+				
+						width: 100%;
+					
                     :hover{
                         cursor: pointer; 
                     }

@@ -50,6 +50,7 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 						medium,
 						gitLink,
 						alt,
+						svgImage
 					} = project;
 					const flipped = index % 2 === 0;
 
@@ -62,6 +63,7 @@ export default function Home({ workRef, aboutRef, skillsRef, contactRef }) {
 							title={title}
 							alt={alt}
 							image={image}
+							svgImage={svgImage}
 							medium={medium}
 							previewDescription={previewDescription}
 							link={`/projects/${id}`}
