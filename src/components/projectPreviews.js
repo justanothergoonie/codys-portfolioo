@@ -11,6 +11,10 @@ const ProjectPreview =({
 	workPreview3,
 	workPreview4,
 	workPreview5,
+    workPreview6,
+    workPreview7,
+    workPreview8,
+    workPreview9,
     trapWorkDescription0,
     trapWorkDescription1,
     pokeWorkDescription0,
@@ -32,6 +36,10 @@ const ProjectPreview =({
     nodeWorkDescription0,
     nodeWorkDescription1,
     nodeWorkDescription2,
+    pingWorkDescription0,
+    pingWorkDescription1,
+    pingWorkDescription2,
+    vidNote,
 
 }) => {
     const history = useHistory();
@@ -42,6 +50,7 @@ const ProjectPreview =({
     return(
         <div className="pnd">
             <h2 className="pnd__title">Previews &amp; Designs</h2>
+            <h3>{vidNote}</h3>
             <div
                 dangerouslySetInnerHTML={{ __html: video }}
                 className="vid"
@@ -87,6 +96,7 @@ const ProjectPreview =({
                         {tatWorkDescription1}
                         {mindWorkDescription2}
                         {nodeWorkDescription2}
+                        {pingWorkDescription0}
 
                     </p>
                 </div>
@@ -97,6 +107,7 @@ const ProjectPreview =({
                     <p>
                         {sucWorkDescription2}
                         {mindWorkDescription3}
+                        
                     </p>
                 </div>
                 <div className="project-page__preview-holder">
@@ -107,6 +118,32 @@ const ProjectPreview =({
                 <div className="project-page__preview-holder">
                     <div className="project-page__project__pics-pic">
                         <img src={workPreview5} alt="" />
+                    </div>
+                </div>
+                <div className="project-page__preview-holder">
+                    <div className="project-page__project__pics-pic">
+                        <img src={workPreview6} alt="" />
+                    </div>
+                    <p>
+                    {pingWorkDescription1}
+                    </p>
+                </div>
+                <div className="project-page__preview-holder">
+                    <div className="project-page__project__pics-pic">
+                        <img src={workPreview7} alt="" />
+                    </div>
+                    <p>
+                        {pingWorkDescription2}
+                    </p>
+                </div>
+                <div className="project-page__preview-holder">
+                    <div className="project-page__project__pics-pic">
+                        <img src={workPreview8} alt="" />
+                    </div>
+                </div>
+                <div className="project-page__preview-holder">
+                    <div className="project-page__project__pics-pic">
+                        <img src={workPreview9} alt="" />
                     </div>
                 </div>
             </div>

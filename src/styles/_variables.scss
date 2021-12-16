@@ -6,6 +6,8 @@ $breakpoint-tablet: 768px;
 
 $breakpoint-desktop: 1024px;
 
+$breakpoint-lg-desk: 1420px;
+
 // Mixins
 
 @mixin flex-center {
@@ -34,6 +36,11 @@ $breakpoint-desktop: 1024px;
 
 @mixin bp-large {
 	@media screen and (min-width: $breakpoint-desktop) {
+		@content;
+	}
+}
+@mixin bp-lgdsk {
+	@media screen and (min-width: $breakpoint-lg-desk) {
 		@content;
 	}
 }

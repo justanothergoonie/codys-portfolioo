@@ -1,8 +1,11 @@
 .about {
 	display: flex;
-	margin: 15rem auto;
+	margin: 5rem auto;
 	// width: 80%;
 	justify-content: space-evenly;
+	@include bp-large{
+		margin: 10rem auto;
+	}
 	.about__pic {
 		display: none;
 		@include bp-med {

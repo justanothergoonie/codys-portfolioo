@@ -39,10 +39,6 @@ export default function Project() {
 					gitLink={project.gitLink}
 					id={project.id}
 					
-
-					// pokeWorkDescription0={project.pokeWorkDescription0}
-					// sucWorkPreview0={project.sucWorkPreview0}
-					
 				/>
 				<Preview 
 						video={project.video}
@@ -52,6 +48,10 @@ export default function Project() {
 						workPreview3={project.workPreview3}
 						workPreview4={project.workPreview4}
 						workPreview5={project.workPreview5}
+						workPreview6={project.workPreview6}
+						workPreview7={project.workPreview7}
+						workPreview8={project.workPreview8}
+						workPreview9={project.workPreview9}
 						trapWorkDescription0={project.trapWorkDescription0}
 						trapWorkDescription1={project.trapWorkDescription1}
 						pokeWorkDescription0={project.pokeWorkDescription0}
@@ -72,7 +72,11 @@ export default function Project() {
 						mafiaWorkDescription0={project.mafiaWorkDescription0}
 						nodeWorkDescription0={project.nodeWorkDescription0}
 						nodeWorkDescription1={project.nodeWorkDescription1}
-						nodeWorkDescription2={project.nodeWorkDescription2}					
+						nodeWorkDescription2={project.nodeWorkDescription2}	
+						pingWorkDescription0={project.pingWorkDescription0}	
+						pingWorkDescription1={project.pingWorkDescription1}	
+						pingWorkDescription2={project.pingWorkDescription2}	
+						vidNote={project.vidNote}			
 				/>
 				</div>
 			) : (
